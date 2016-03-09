@@ -11,9 +11,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-=============
-Test Section
-=============
+=================
+テストセクション
+=================
 
 Indices and tables
 ==================
