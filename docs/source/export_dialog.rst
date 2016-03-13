@@ -4,7 +4,7 @@
 エクスポートダイアログでは， MR\ :sup:`3` \ で構築したRDF(S) データグラフをRDF/XML, N3, N-Triple, Turtle 形式でRDF(S) 文書にエクスポートすることができる．図1にエクスポートダイアログのスクリーンショットを示す．また，以下ではエクスポートダイアログの各部分（図1内の1 から8）について説明する．
 
  .. figure:: figures/export_dialog.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図1: エクスポートダイアログ
    :align: center
 

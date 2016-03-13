@@ -16,7 +16,7 @@ RDFS文書は，クラスおよびプロパティの階層関係，プロパテ�
 以下では，RDF(S)コンテンツ構築支援ツールの各機能について説明する．
 
 .. figure:: figures/function_overview.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図1: RDF(S)コンテンツ構築支援ツールの機能概要
    :align: center
 

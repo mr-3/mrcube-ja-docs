@@ -8,7 +8,7 @@
 プロパティエディタでは，RDFS プロパティの階層関係およびRDFS プロパティの属性編集を行うことができる．図1にプロパティエディタのスクリーンショットを示す．
 
 .. figure:: figures/property_editor.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図1: プロパティエディタ
    :align: center
    
@@ -21,14 +21,14 @@
 プロパティエディタ内で，右クリックするとポップアップメニューが表示される．ポップアップメニューは，ノードを選択している場合としていない場合で表示内容が異なる．ポップアップメニューは，以下のとおり．
 
 .. figure:: figures/popup_menu_selected_property_editor.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: ノードが選択されていない状態
    :align: center
    
    ノードが選択されていない状態
    
 .. figure:: figures/popup_menu_selected_property_editor.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: ノードが選択された状態
    :align: center
    
@@ -52,21 +52,21 @@ RDFSプロパティからRDFSクラスへ変換する．
 プロパティエディタ内のRDFS プロパティを選択すると，RDFS プロパティの属性がアトリビュートダイアログに表示される（図2，図3，図4）．アトリビュートダイアログ左側のリストには，「基本」，「ラベル」，「コメント」，「範囲」，「インスタンス」，「上位プロパティ」項目が表示される．「基本」，「ラベル」，「コメント」の編集項目はRDFSクラスと同様である．「基本」のリソースタイプは，「設定」ダイアログのプロパティクラスリストから追加および削除を行うことができる．「範囲」にはRDFS プロパティの定義域および値域をクラスエディタから選択できる（図2）．「インスタンス」には選択したRDFS プロパティを有するRDF リソースのリストが表示される（図3）．リスト中の項目をクリックした際の動作は，RDFS クラスの場合と同様である．「上位プロパティ」には選択したRDFS プロパティの上位プロパティが表示される（図4）．
 
 .. figure:: figures/attribute_dialog_rdfs_property_region.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図2: アトリビュートダイアログ（RDFSプロパティの範囲）
    :align: center
    
    図2: アトリビュートダイアログ（RDFSプロパティの範囲）
    
 .. figure:: figures/attribute_dialog_rdfs_property_instance.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図3: アトリビュートダイアログ（RDFSプロパティのインスタンス）
    :align: center
    
    図3: アトリビュートダイアログ（RDFSプロパティのインスタンス）
    
 .. figure:: figures/attribute_dialog_rdfs_property_upper_property.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図4: アトリビュートダイアログ（RDFSプロパティの上位クラス）
    :align: center
    

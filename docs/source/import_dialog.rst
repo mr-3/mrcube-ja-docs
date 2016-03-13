@@ -4,7 +4,7 @@
  インポートダイアログでは，RDF/XML, N3, N-Triple, Turtle 形式で記述されたRDF(S)文書をMR\ :sup:`3` \にインポートすることができる．図1にインポートダイアログのスクリーンショットを示す．また，以下ではインポートダイアログの各部分（図1内の1 から13）について説明する．
  
  .. figure:: figures/import_dialog.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図1: インポートダイアログ
    :align: center
 

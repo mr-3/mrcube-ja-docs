@@ -99,7 +99,7 @@
     MR\ :sup:`3` \のバージョン，HPのURL等を表示する．
  
  .. figure:: figures/namespace_table.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図1: 名前空間テーブル
    :align: center
  

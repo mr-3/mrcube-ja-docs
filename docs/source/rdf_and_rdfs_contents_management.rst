@@ -23,7 +23,7 @@ Webコンテンツから些末な情報を排除し，機械処理させたい�
 各Web リソースには，それらの内容をモデル化したRDF データモデルを用意する．RDF データモデルをXML などの特定の構文で記述したものがRDF コンテンツである．RDF データモデル構築のために，領域オントロジーや汎用オントロジー（WordNet [1]，EDR 電子化辞書 [2] など）を参照する．図1 中のDomain B のように，複数のWeb リソースでも対象領域が同じであれば，同一の領域オントロジーを参照することが可能である．
 
 .. figure:: figures/sw_paradigm.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図1: セマンティックWeb におけるWeb リソース，モデル，オントロジーの関係
    :align: center
 
@@ -44,7 +44,7 @@ RDFS よりも詳細なオントロジーにおける記述（クラス公理や
 図2にRDF(S) コンテンツ管理の概念図を示す．
 
 .. figure:: figures/metamodel_management_scenario.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図2: RDF(S) コンテンツ管理
    :align: center
    
@@ -65,7 +65,7 @@ RDF(S) コンテンツ管理のシナリオ
 図3では，はじめにオントロジーにおけるP1 がユーザによりP1′ に修正される．それに伴い，RDF(S) コンテンツ管理機能により，対応するモデルにおけるRDF プロパティが自動的に修正される．次に，RDF リソースのタイプであるモデルにおけるC2 がユーザによりC2′ に修正される．それに伴い，対応するオントロジーにおけるRDFS クラスがRDF(S) コンテンツ管理機能により半自動的に修正される．詳しくは，RDF(S) コンテンツ管理機能の詳細で述べる．
 
 .. figure:: figures/concept_of_metamodel_management.png
-   :scale: 50 %
+   :scale: 80 %
    :alt: 図3: RDF(S) コンテンツ管理のシナリオ
    :align: center
    
