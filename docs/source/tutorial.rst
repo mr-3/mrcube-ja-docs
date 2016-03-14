@@ -5,7 +5,7 @@
 .. contents:: コンテンツ 
    :depth: 3
 
-チュートリアルでは，RDFPrimerの中で紹介されているRDF文書(Example 1: RDF/XML Describing Eric Miller)をMR\ :sup:`3` \ 1.0 RC3を用いて，２通りの方法（トップダウンとボトムアップ）で作成していく．本チュートリアルと同様のRDF文書作成動画はデモムービーのページから見ることができる．また，RDFSの置換についての例を示す．
+チュートリアルでは，RDFPrimerの中で紹介されているRDF文書(Example 1: RDF/XML Describing Eric Miller)をMR\ :sup:`3` \ 1.0を用いて，２通りの方法（トップダウンとボトムアップ）で作成していく．本チュートリアルと同様のRDF文書作成動画はデモムービーのページから見ることができる．また，RDFSの置換例を示す．
 
 ------------------------------   
 概要
@@ -61,7 +61,7 @@ RDFSクラスの挿入を行う．クラスエディタ内で右クリックを�
 「クラスの挿入」メニューを選択すると，以下のダイアログが表示される．「接頭辞コンボボックス」から名前空間テーブ ルに登録した接頭辞contactを選択し，「IDテキストフィールド」にPersonを入力する．「了解ボタン」をクリックするとクラスエディタ内に RDFSクラス（この場合，contact:Person）が挿入される．
 
 .. figure:: figures/top_down_step3.png
-   :scale: 80 %
+   :scale: 50 %
    :align: center
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -163,10 +163,6 @@ RDFプロパティを編集するためには，アトリビュートダイア�
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 作成したRDFコンテンツをRDF/XML形式でファイルに出力したい場合には，エクスポートダイアログの「ファイルボタン」を選択する．保存ダイアログが表示されるため，適当なフォルダにRDFファイルを保存する．
-
-.. figure:: figures/top_down_step12.png
-   :scale: 80 %
-   :align: center
    
 ---------------------------------------------
 RDFコンテンツの作成 （ボトムアップ）
@@ -220,7 +216,7 @@ RDFコンテンツの作成 （ボトムアップ）
 手順７: RDFプロパティの編集１
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-アトリビュートダイアログを表示し，編集したいRDFプロパティを選択する．「プロパティの接頭辞のみ表示チェック ボックス」にチェックがされているとRDFSプロパティで定義されているプロパティのみを表示，選択することができる．今回は，RDFSプロパティに指定 したいプロパティが定義されていないので，このチェックをはずす．「接頭辞コンボボックス」から名前空間テーブルに登録したすべての接頭辞を選択できるよ うになるので，contactを選択する．「プロパティID」リストには，RDFSプロパティで定義されているプロパティのID一覧が表示されるが，今回 は定義されていないので表示されない．「IDテキストフィールド」にfullNameと入力し，「適用ボタン」をクリックする．メタモデル管理に関するダ イアログが表示される．このダイアログでは，現在指定されているプロパティmr3:nilプロパティの名前を変更するか，新規にRDFSプロパティを作成 するか選択する．ここでは，新規にRDFSプロパティを作成するため，「新規作成ラジオボタン」を選択し「了解ボタン」を押す．
+アトリビュートダイアログを表示し，編集したいRDFプロパティを選択する．「プロパティの接頭辞のみ表示チェック ボックス」にチェックがされているとRDFSプロパティで定義されているプロパティのみを表示，選択することができる．今回は，RDFSプロパティに指定 したいプロパティが定義されていないので，このチェックをはずす．「接頭辞コンボボックス」から名前空間テーブルに登録したすべての接頭辞を選択できるよ うになるので，contactを選択する．「プロパティID」リストには，RDFSプロパティで定義されているプロパティのID一覧が表示されるが，今回 は定義されていないので表示されない．「IDテキストフィールド」にfullNameと入力し，「適用ボタン」をクリックする．「定義されていません.プロパティを作成しますか?」と尋ねるダイアログが表示されるので，「はいボタン」をクリックする．
 
 .. figure:: figures/bottom_up_step7.png
    :scale: 80 %
@@ -243,50 +239,64 @@ RDFコンテンツの作成 （ボトムアップ）
 同様に，contact:mailBox, contact:personalTitleプロパティも編集し，RDFSプロパティとしてボトムアップに定義する．以上の手順を繰り返し行うことで，RDFコンテンツをボトムアップに作成できる．
 
 ---------------------------------------------
-RDFSの置換について
+RDFSの置換例
 ---------------------------------------------
 
-（以下の内容は，最新バージョン（バージョン1.0 RC3）と若干動作が異なっている．）メニューのファイル->インポート->置き換え->RDFSのサブメニューを実行するとRDFS の置換を行うことができる．以下の説明の中で，接頭辞animalは，http://example.animal#をあらわす．接頭辞mr3は， http://panda.cs.inf.shizuoka.ac.jp/mmm/mr3#をあらわす．
+以下の図に示すように，インポートダイアログにおいて，「データタイプ」に「RDFS」，「インポート方法」に「置き換え」を選択して，実行するとRDFS の置換を行うことができる．以下の説明の中で，接頭辞animalは，http://example.com/animal#をあらわす．接頭辞mr3は， http://mr3.sourceforege.net#をあらわす．
+
+.. figure:: figures/import_dialog_rdfs_replace.png
+   :scale: 80 %
+   :align: center
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 置換前
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-例として，以下のRDFs文書のRDFSの置換を行う．以下のRDFs文書にはanimal:動物クラスのサブクラス に，animal:猫クラスとanimal:犬クラスがある．また，RDFモデルには，ポチ（animal:犬クラスのインスタンス）とたま （animal:猫クラスのインスタンス）が定義されており，ポチとたまには，mr3:じゃれるという関係がある．
+例として，以下のRDFs文書のRDFSの置換を行う．以下のRDFs文書には「mr3:動物」クラスのサブクラス に，「mr3:猫」クラスと「mr3:犬」クラスがある．また，RDFモデルには，「mr3:ポチ」（「mr3:犬」クラスのインスタンス）と「mr3:タマ」 （「mr3:猫」クラスのインスタンス）リソースが定義されており，「mr3:ポチ」と「mr3:タマ」には，「mr3:じゃれる」という関係がある．
 
 変換前のRDFS
 
 ::
 
-     <rdf:RDF
-          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-        <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:Class rdf:about="http://example.animal#動物">
-          <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <?xml version="1.0"?>
+    <rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:mr3="http://mr3.sourceforge.net#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:animal="http://example.com/animal#"
+        xml:base="http://mr3.sourceforge.net#">
+        <rdfs:Class rdf:ID="犬">
+            <rdfs:subClassOf>
+            <rdfs:Class rdf:ID="動物"/>
+            </rdfs:subClassOf>
         </rdfs:Class>
-        <rdfs:Class rdf:about="http://example.animal#犬">
-          <rdfs:subClassOf rdf:resource="http://example.animal#動物"/>
-        </rdfs:Class>
-        <rdfs:Class rdf:about="http://example.animal#猫">
-          <rdfs:subClassOf rdf:resource="http://example.animal#動物"/>
+        <rdfs:Class rdf:ID="猫">
+            <rdfs:subClassOf rdf:resource="#動物"/>
         </rdfs:Class>
         <rdf:Property rdf:ID="じゃれる"/>
-      </rdf:RDF>
+    </rdf:RDF>
+
       
 変換前のRDF
 
 ::
 
-      <rdf:RDF
-          xmlns:animal="http://example.animal#"
-          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-          xmlns:mr3="http://panda.cs.inf.shizuoka.ac.jp/mmm/mr3#">
-        <animal:猫 rdf:ID="たま"/>
-        <animal:犬 rdf:ID="ポチ">
-          <mr3:じゃれる rdf:resource="#たま"/>
-        </animal:犬>
-      </rdf:RDF>
+    <?xml version="1.0"?>
+    <rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:mr3="http://mr3.sourceforge.net#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:animal="http://example.com/animal#"
+        xml:base="http://mr3.sourceforge.net#">
+        <mr3:犬 rdf:ID="ポチ">
+            <mr3:じゃれる>
+                <mr3:猫 rdf:ID="タマ"/>
+            </mr3:じゃれる>
+        </mr3:犬>
+    </rdf:RDF>
+
 
 .. figure:: figures/rdfs_replace_before.png
    :scale: 80 %
@@ -302,63 +312,69 @@ RDFSの置換について
 
 ::
 
-     <rdf:RDF
-          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-        <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        <rdfs:Class rdf:ID="猫">
-          <rdfs:subClassOf>
-            <rdfs:Class rdf:about="#動物"/>
-          </rdfs:subClassOf>
-        </rdfs:Class>
-        <rdfs:Class rdf:ID="犬">
-          <rdfs:subClassOf>
-            <rdfs:Class rdf:about="#動物"/>
-          </rdfs:subClassOf>
-        </rdfs:Class>
-        <rdfs:Class rdf:ID="動物">
-          <rdfs:subClassOf  rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-        </rdfs:Class>
-        <rdf:Property rdf:ID="ほえる"/>
-      </rdf:RDF>
+    <?xml version="1.0"?>
+    <rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:mr3="http://mr3.sourceforge.net#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:animal="http://example.com/animal#"
+        xml:base="http://mr3.sourceforge.net#">
+      <rdfs:Class rdf:about="http://example.com/animal#動物"/>
+      <rdfs:Class rdf:about="http://example.com/animal#猫">
+        <rdfs:subClassOf rdf:resource="http://example.com/animal#動物"/>
+      </rdfs:Class>
+      <rdfs:Class rdf:about="http://example.com/animal#犬">
+        <rdfs:subClassOf rdf:resource="http://example.com/animal#動物"/>
+      </rdfs:Class>
+      <rdf:Property rdf:about="http://example.com/animal#じゃれる"/>
+    </rdf:RDF>
+
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
 RDFS置換ダイアログ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-RDFSの置換を実行するとRDFS置換ダイアログが表示される．RDFS置換ダイアログには，置換前と置換後のクラ スとプロパティのリストが表示される．上，下のボタンを押して，置換前と置換後のクラス及びプロパティを同じ行に合わせることで，置換するクラス及びプロ パティを指定することができる．ここでは，animal:動物クラスをmr3:動物クラスに，animal:犬クラスをmr3:犬クラスに， animal:猫クラスをmr3:猫クラスに置換する．また，mr3:じゃれるプロパティをmr3:ほえるプロパティに置換する．以下の図のようにして， 適用するボタンを押すと置換が行われる．置換前と置換後のリストの項目の初期位置は，以下の優先順で決められる．
+RDFSの置換を実行するとRDFS置換ダイアログが表示される．RDFS置換ダイアログには，置換前と置換後のクラスとプロパティのリストが表示される．上，下のボタンを押して，置換前と置換後のクラス及びプロパティを同じ行に合わせることで，置換するクラス及びプロパティを指定することができる．ここでは，「mr3:動物」クラスを「animal:動物」クラスに，「mr3:犬」クラスを「animal:犬」クラスに，「mr3:猫」クラスを「animal:猫」クラスに置換する．また，「mr3:じゃれる」プロパティを「animal:じゃれる」プロパティに置換する．以下の図のようにして， 適用するボタンを押すと置換が行われる．置換前と置換後のリストの項目の初期位置は，以下の優先順で決められる．
 
-同一URI
-IDが同一
-１，２に該当するクラス及びプロパティがない場合には，NULLとなる．NULLまたは，置換前よりも置換後のクラス及びプロパティの数が少ない場合には，クラスは空に，プロパティはmr3:nilとなる．
+1. URIが同一の場合
+2. IDが同一の場合
 
-.. figure:: figures/rdfs_replace_dialog_class.png
+1と2に該当するクラス及びプロパティがない場合には，NULLとなる．NULLまたは，置換前よりも置換後のクラス及びプロパティの数が少ない場合には，クラスは空に，プロパティは「mr3:nil」となる．
+
+.. figure:: figures/rdfs_replace_dialog.png
    :scale: 80 %
    :align: center
    
-.. figure:: figures/rdfs_replace_dialog_property.png
-   :scale: 80 %
-   :align: center
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 置換後
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-置換後は，以下のようになる．RDFSを置換したことで，RDFモデルのリソースのタイプやプロパティの置換も同時に 行われる．今回の例では，リソースポチのタイプがanimal:犬からmr3:犬に，リソースたまのタイプがanimal:猫からmr3:猫に変更されて いる．また，ポチとたまの関係がmr3:じゃれるプロパティからmr3:ほえるプロパティに変更されている．
+置換後は，以下のようになる．RDFSを置換したことで，RDFモデルのリソースのタイプやプロパティの置換も同時に行われる．今回の例では，リソース「ポチ」のタイプが「mr3:犬」から「animal:犬」に，リソース「タマ」のタイプが「mr3:猫」から「animal:猫」に変更されている．また，ポチとタマの関係が「mr3:じゃれる」プロパティから「animal:じゃれる」プロパティに変更されている．
 
 置換後のRDF
 
 ::
 
+    <?xml version="1.0"?>
     <rdf:RDF
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:mr3="http://panda.cs.inf.shizuoka.ac.jp/mmm/mr3#">
-       <mr3:猫 rdf:ID="たま"/>
-       <mr3:犬 rdf:ID="ポチ">
-         <mr3:ほえる rdf:resource="#たま"/>
-       </mr3:犬>
-     </rdf:RDF>
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:mr3="http://mr3.sourceforge.net#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:animal="http://example.com/animal#"
+        xml:base="http://mr3.sourceforge.net#">
+      <animal:犬 rdf:ID="ポチ">
+        <animal:じゃれる>
+          <animal:猫 rdf:ID="タマ"/>
+        </animal:じゃれる>
+      </animal:犬>
+    </rdf:RDF>
+
      
 .. figure:: figures/rdfs_replace_after.png
    :scale: 80 %
    :align: center     
+   
+   
