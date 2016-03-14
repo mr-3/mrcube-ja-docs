@@ -53,7 +53,8 @@ protected Model getProjectModel()
 
 1. MR3Pluginクラスのサブクラスを作り，public void exec()メソッドをオーバーライドする．
 2. マニフェストファイルに，プラグインクラス名とプラグイン名を以下のように記述し，プラグインクラスとマニフェストファイルをjarファイルでまとめる．（プラグインクラス名とプラグイン名は必須．creator, date, descriptionはオプション．）
-::
+
+.. code-block:: mf
 
      Name: プラグインクラス名
      plugin-name(or menu-name): プラグイン名
@@ -74,7 +75,8 @@ MR\ :sup:`3` \を起動するとファイル->プラグインにメニューが�
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 マニフェストファイル
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-::
+
+.. code-block:: mf
 
     Manifest-Version: 1.0
     
@@ -126,7 +128,8 @@ MR\ :sup:`3` \を起動するとファイル->プラグインにメニューが�
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 サンプルプラグイン１では，subjectがhttp://mr3.sample.resource，predicateがhttp://mr3.sample.property，objectがSampleであるStatementから，JenaのModelを作成する．MR3PluginクラスのreplaceRDFModeメソッドを用いて，作成したJenaのModelをMR3のRDFグラフへ変換する．以下は，サンプルプラグイン１のソースコードである．
-::
+
+.. code-block:: java
 
     /*
      * @(#) SamplePlugin1.java
@@ -169,7 +172,7 @@ MR\ :sup:`3` \を起動するとファイル->プラグインにメニューが�
 
 サンプルプラグイン２では，MR\ :sup:`3` \PluginクラスのgetRDFModelメソッドを用いてMR\ :sup:`3` \のRDFグラフからJenaのModelを獲得する．獲得したModelをRDFに変換して内部ウィンドウに出力する．以下は，サンプルプラグイン２のソースコードである．
 
-::
+.. code-block:: java
 
     /*
      * @(#) SamplePlugin2.java
@@ -226,7 +229,7 @@ SugiyamaLayoutPlugin
 
 SugiyamaLayoutPluginは，JGraphpadに付属するSugiyamaLayoutAlgorithm.javaをMR\ :sup:`3` \用に修正したクラスを利用して作成したプラグインである．SugiyamaLayoutAlgorithmクラスは，performsメソッドをもっている．performsメソッドは，org.jgraph.JGraphを引数にとり，グラフの整形を行う．SugiyamaLayoutPluginでは，MR3PluginクラスのgetRDFGraph，getClassGraph，getPropertyGraphメソッドを利用して，MR\ :sup:`3` \のグラフをJGraphオブジェクトとして受け取り，それをSugiyamaLayoutAlgoritmクラスのperformsメソッドに渡すことで，グラフを整形を行うことができる．以下は，SugiyamaLayoutPluginクラスのソースコードである．
 
-::
+.. code-block:: java
 
     package org.semanticweb.mmm.mr3.layoutPlugin;
     

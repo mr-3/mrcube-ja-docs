@@ -15,7 +15,7 @@ RDFPrimerの中で紹介されているRDF文書(Example 1: RDF/XML Describing E
 
 Example 1: RDF/XML Describing Eric Miller
 
-::
+.. code-block:: xml
 
     <?xml version="1.0"?>
     <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -256,7 +256,7 @@ RDFSの置換例
 
 変換前のRDFS
 
-::
+.. code-block:: xml
 
     <?xml version="1.0"?>
     <rdf:RDF
@@ -280,7 +280,7 @@ RDFSの置換例
       
 変換前のRDF
 
-::
+.. code-block:: xml
 
     <?xml version="1.0"?>
     <rdf:RDF
@@ -310,7 +310,7 @@ RDFSの置換例
 
 置換するRDFS
 
-::
+.. code-block:: xml
 
     <?xml version="1.0"?>
     <rdf:RDF
@@ -355,7 +355,7 @@ RDFSの置換を実行するとRDFS置換ダイアログが表示される．RDF
 
 置換後のRDF
 
-::
+.. code-block:: xml
 
     <?xml version="1.0"?>
     <rdf:RDF
