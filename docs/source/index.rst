@@ -44,6 +44,7 @@ http://mrcube.org/documentation/?lang=ja から移行中です．
 索引
 ------------------------------
 * :ref:`genindex`
+
 .. * :ref:`modindex`
 .. * :ref:`search`
 

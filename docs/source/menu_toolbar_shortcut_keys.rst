@@ -98,39 +98,39 @@
 ヘルプ->About MR\ :sup:`3` \
     MR\ :sup:`3` \のバージョン，HPのURL等を表示する．
  
- .. figure:: figures/namespace_table.png
-   :scale: 80 %
-   :alt: 図1: 名前空間テーブル
-   :align: center
  
 ------------------------------- 
 ツールバー
 ------------------------------- 
 
-ツールアイコン	説明
-	MR\ :sup:`3` \のプロジェクトを新規に開く．
-	MR\ :sup:`3` \のプロジェクトファイルを開く．
-	MR\ :sup:`3` \のプロジェクトファイルを保存する．
-	MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．
-	ノードを移動する
-	ノードとノードを矢印で接続する
-	RDFリソースまたは，RDFSプロパティを挿入する
-	RDFリテラルまたは，RDFSクラスを挿入する
-	ノードをコピーする
-	ノードをカットする
-	ノードをペーストする
-	ノードを削除する
-	リソース検索ダイアログを表示する
-	標準の倍率にする
-	拡大する
-	縮小する
-	全体が表示できる倍率にする
-	RDFエディタを前面に表示する
-	クラスエディタを前面に表示する
-	プロパティエディタを前面に表示する
-	アトリビュートダイアログを前面に表示する
-	ソースダイアログを前面に表示する
-	名前空間テーブルを前面に表示する
+================================================== ===================================================================
+        アイコン                                      説明                                                             
+================================================== ===================================================================
+ .. figure:: figures/toolbar/new.png                MR\ :sup:`3` \のプロジェクトを新規に開く                             
+ .. figure:: figures/toolbar/open.png               MR\ :sup:`3` \のプロジェクトファイルを開く．                          
+ .. figure:: figures/toolbar/save.png               MR\ :sup:`3` \のプロジェクトファイルを保存する．                       
+ .. figure:: figures/toolbar/saveas.png             MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．                  
+ .. figure:: figures/toolbar/move.gif               ノードを移動する                                           
+ .. figure:: figures/toolbar/connect.gif            ノードとノードを矢印で接続する                                     
+ .. figure:: figures/toolbar/insert_resource.png    RDFリソースを挿入する      
+ .. figure:: figures/toolbar/insert_class.png       RDFSクラスを挿入する    
+ .. figure:: figures/toolbar/insert_property.png    RDFSプロパティを挿入する                         
+ .. figure:: figures/toolbar/insert_literal.png     RDFリテラルを挿入する                           
+ .. figure:: figures/toolbar/copy.png               ノードをコピーする                                         
+ .. figure:: figures/toolbar/cut.png                ノードをカットする                                         
+ .. figure:: figures/toolbar/paste.png              ノードをペーストする                                        
+ .. figure:: figures/toolbar/delete.png             ノードを削除する                                          
+ .. figure:: figures/toolbar/find.png               リソース検索ダイアログを表示する                                  
+ .. figure:: figures/toolbar/zoom100.gif            標準の倍率にする                                          
+ .. figure:: figures/toolbar/zoom_in.png            拡大する                                              
+ .. figure:: figures/toolbar/zoom_out.png           縮小する                                              
+ .. figure:: figures/toolbar/zoom.png               全体が表示できる倍率にする                                     
+ .. figure:: figures/toolbar/rdf_editor.png         RDFエディタを前面に表示する                                   
+ .. figure:: figures/toolbar/class_editor.png       クラスエディタを前面に表示する                                   
+ .. figure:: figures/toolbar/property_editor.png    プロパティエディタを前面に表示する                                 
+ .. figure:: figures/toolbar/attr_dialog.png        アトリビュートダイアログを前面に表示する                              
+ .. figure:: figures/toolbar/namespace_table.png    名前空間テーブルを前面に表示する                                  
+================================================== ===================================================================
 
 ------------------------------- 
 ショートカットキー

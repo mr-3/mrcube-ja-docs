@@ -1,4 +1,5 @@
 .. index:: プロパティエディタ
+
 =====================
 プロパティエディタ
 =====================
@@ -9,7 +10,7 @@
 プロパティエディタでは，RDFS プロパティの階層関係およびRDFS プロパティの属性編集を行うことができる．図1にプロパティエディタのスクリーンショットを示す．
 
 .. figure:: figures/property_editor.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 図1: プロパティエディタ
    :align: center
    
@@ -22,14 +23,14 @@
 プロパティエディタ内で，右クリックするとポップアップメニューが表示される．ポップアップメニューは，ノードを選択している場合としていない場合で表示内容が異なる．ポップアップメニューは，以下のとおり．
 
 .. figure:: figures/popup_menu_selected_property_editor.png
-   :scale: 80 %
+   :scale: 40 %
    :alt: ノードが選択されていない状態
    :align: center
    
    ノードが選択されていない状態
    
 .. figure:: figures/popup_menu_selected_property_editor.png
-   :scale: 80 %
+   :scale: 40 %
    :alt: ノードが選択された状態
    :align: center
    
