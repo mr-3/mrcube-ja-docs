@@ -10,7 +10,7 @@ RDFエディタ
 RDFエディタでは，RDFリソース，RDFリソースのタイプ，RDFプロパティ，RDFリテラルの編集を行う．図1 に示すように，RDFリソースは楕円，RDFプロパティは矢印，RDFリテラルは矩形でRDFエディタ内に表示される．RDFリソースのタイプはRDFリソースの右上に表示される．
 
 .. figure:: figures/rdf_editor.png
-   :scale: 50 %
+   :scale: 40 %
    :alt: 図1: RDFエディタ
    :align: center
 
@@ -24,14 +24,14 @@ RDFエディタのポップアップメニュー
 RDFエディタ内で，右クリックするとポップアップメニューが表示される．ポップアップメニューは，ノードを選択している場合としていない場合で表示内容が異なる．ポップアップメニューは，以下のとおり．
 
 .. figure:: figures/popup_menu_rdf_editor.png
-   :scale: 40 %
+   :scale: 50 %
    :alt: ノードが選択されていない状態
    :align: center
 
    ノードが選択されていない状態
 
 .. figure:: figures/popup_menu_selected_rdf_editor.png
-   :scale: 40 %
+   :scale: 50 %
    :alt: ノードが選択された状態
    :align: center
 
