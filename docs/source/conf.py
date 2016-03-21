@@ -54,7 +54,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'mrcube'
+project = u'MRCube'
 copyright = u'2016, Takeshi Morita'
 author = u'Takeshi Morita'
 
@@ -232,7 +232,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'mrcube.tex', u'mrcube Documentation',
+    (master_doc, 'mrcube.tex', u'MRCube Documentation',
      u'Takeshi Morita', 'manual'),
 ]
 
@@ -262,7 +262,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mrcube', u'mrcube Documentation',
+    (master_doc, 'mrcube', u'MRCube Documentation',
      [author], 1)
 ]
 
@@ -297,7 +297,7 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = project
+epub_title = u'MRCube 1.0 ドキュメント'
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright
