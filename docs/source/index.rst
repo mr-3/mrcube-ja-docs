@@ -3,46 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==================================
 MR\ :sup:`3` \ドキュメント
-==================================
+==========================
 
 http://mrcube.org/documentation/?lang=ja から移行中です．
 
-現状，不完全な部分やMR\ :sup:`3` \ ver.1.0と表示や説明が異なる部分が多々あります．
+TODOセクションに，今後修正すべき箇所を列挙しています．
 
 .. toctree::
    :caption: ユーザドキュメント
 
+   about
    install
    rdf_and_rdfs_contents_management
-   mrcube_design
-   rdf_and_rdfs_conetents_management_facilities
-   implementation_overview
-   rdf_editor
-   class_editor
-   property_editor
-   resource_search_dialog
-   namespace_table
-   remove_dialog
-   import_dialog   
-   export_dialog
-   config_dialog
-   menu_toolbar_shortcut_keys
+   mrcube_functions
+   mrcube_implementation
+   tutorial
 
 .. toctree::
-    :caption: チュートリアル
-    
-    tutorial
-    
-.. toctree::
-    :caption: 開発者ドキュメント
-    
-    plugin_development       
-   
-------------------------------
+   :caption: 開発者ドキュメント
+
+   plugin_development       
+
 索引
-------------------------------
+----
 * :ref:`genindex`
 
 .. * :ref:`modindex`

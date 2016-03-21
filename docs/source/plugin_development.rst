@@ -257,3 +257,6 @@ SugiyamaLayoutPluginは，JGraphpadに付属するSugiyamaLayoutAlgorithm.java�
     	}
     }
 
+TODO
+----
+* 現状の実装状況に合わせて，ドキュメントを修正する
