@@ -14,7 +14,7 @@ RDFS文書は，クラスおよびプロパティの階層関係，プロパテ�
 以下では，RDF(S)コンテンツ構築支援ツールの各機能について説明する．
 
 .. _mrcube_function_overview:
-.. figure:: figures/function_overview.png
+.. figure:: figures/mrcube_function_overview.svg
    :scale: 80 %
    :alt: RDF(S)コンテンツ構築支援ツールの機能概要
    :align: center
@@ -51,7 +51,7 @@ RDFSクラス名の変更
 RDFSクラス名を変更する場合，そのRDFSクラスを参照しているRDFリソースのタイプ名(URI) も同時に変更される． :numref:`rename-class`  は，RDFSクラス名を変更する場合の具体例を表している． :numref:`rename-class`  の左側はRDFSクラスex:書籍を変更する前の状態を表しており，右側がRDFSクラスex:書籍をex:書物に変更した後の状態を表している．以下，RDF(S)コンテンツ管理機能の具体例を表す図中のRDFSにおける矩形はクラス，楕円はプロパティ，矢印はクラスの上位・下位関係を表す．矢印は，下位クラスから上位クラスに向かって伸びている．同様に，図中のRDFにおける楕円はRDFリソース，矢印はRDFプロパティ，楕円右上のラベルは，RDFリソースのタイプを表す．ex:学問のすゝめとex:民情一新は，ex:書籍をタイプとするRDFリソースである．RDFSクラスex:書籍をex:書物に変更すると，ex:書籍に対応するRDFリソースのタイプにも自動的に変更が反映される．つまり，RDFリソースex:学問のすゝめおよびex:民情一新のタイプは，ex:書物に自動的に変更される．
    
 .. _rename-class:
-.. figure:: figures/rename_rdfs_class.png
+.. figure:: figures/rename_rdfs_class.svg
    :scale: 80 %
    :alt: RDFSクラス名の変更
    :align: center
@@ -67,7 +67,7 @@ RDFSクラスを削除する場合，そのRDFSクラスをタイプとするRDF
     RDFリソースのタイプが空の場合，rdfs:Resource クラスをタイプとして持つことになる．
 
 .. _remove-class:
-.. figure:: figures/remove_rdfs_class.png
+.. figure:: figures/remove_rdfs_class.svg
    :scale: 80 %
    :alt: RDFSクラスの削除
    :align: center
@@ -84,10 +84,10 @@ RDF(S) コンテンツ管理機能がはたらくRDFSプロパティの編集に
 RDFSプロパティ名の変更
 """"""""""""""""""""""
 
-RDFSプロパティ名を変更する場合，そのRDFSプロパティを参照しているRDFプロパティ名(URI）も同時に自動的に変更される． :numref:`rename-rdfs-property` は，RDFSプロパティ名を変更する場合の具体例を表している． :numref:`rename-rdfs-property` の左側はRDFSプロパティex:著者を変更する前の状態を表しており，右側はRDFSプロパティex:著者をex:著作者に変更した後の状態を表している．ex:学問のすゝめおよびex:民情一新は，ex:著者プロパティをもつRDFリソースである．ユーザがRDFSプロパティex:著者をex:著作者に変更すると，ex:著者と対応するRDFプロパティにも変更が反映される．つまり，RDFリソースex:学問のすゝめおよびex:民情一新がもつプロパティex:著者はex:著作者に自動的に変更される．
+RDFSプロパティ名を変更する場合，そのRDFSプロパティを参照しているRDFプロパティ名(URI）も同時に自動的に変更される． :numref:`rename-rdfs-property` は，RDFSプロパティ名を変更する場合の具体例を表している． :numref:`rename-rdfs-property` の左側はRDFSプロパティex:著者を変更する前の状態を表しており，右側はRDFSプロパティex:著者をex:作者に変更した後の状態を表している．ex:学問のすゝめおよびex:民情一新は，ex:著者プロパティをもつRDFリソースである．ユーザがRDFSプロパティex:著者をex:作者に変更すると，ex:著者と対応するRDFプロパティにも変更が反映される．つまり，RDFリソースex:学問のすゝめおよびex:民情一新がもつプロパティex:著者はex:作者に自動的に変更される．
 
 .. _rename-rdfs-property:
-.. figure:: figures/rename_rdfs_property.png
+.. figure:: figures/rename_rdfs_property.svg
    :scale: 80 %
    :alt: RDFSプロパティ名の変更
    :align: center
@@ -104,7 +104,7 @@ RDFSプロパティを削除する場合，そのRDFSプロパティを参照し
    MR\ :sup:`3` \ では，初期のプロパティをmr3:nil としている．RDFSプロパティが定義されていない状態でRDFリソース間の関係を定義した場合，そのRDFリソース間の関係は初期のプロパティとなる．
 
 .. _remove-property:
-.. figure:: figures/remove_rdfs_property.png
+.. figure:: figures/remove_rdfs_property.svg
    :scale: 80 %
    :alt: RDFSプロパティの削除
    :align: center
@@ -124,7 +124,7 @@ M→O: RDFリソースのタイプの変更
 :numref:`rename-resource-type` では，RDFSクラスex:書物が定義されていない状態で，ユーザがRDFリソースex:民情一新のタイプex:書籍をex:書物に変更している．ここでは，整合性を保つためにRDFSクラス名の変更をユーザが選択している．RDFSクラスex:書籍をex:書物に変更することにより，ex:学問のすゝめのタイプもex:書物に半自動的に変更される．
 
 .. _rename-resource-type:
-.. figure:: figures/rename_rdf_resource_type.png
+.. figure:: figures/rename_rdf_resource_type.svg
    :scale: 80 %
    :alt: 参照しているRDFSクラス名の変更
    :align: center
@@ -141,7 +141,7 @@ RDFSクラスの新規作成
     rdfs:subClassOfプロパティが定義されていないクラスは，暗黙的にrdfs:Resourceのサブクラスとなる．
 
 .. _make-class:
-.. figure:: figures/make_rdfs_class.png
+.. figure:: figures/make_rdfs_class.svg
    :scale: 80 %
    :alt: RDFSクラスの新規作成
    :align: center
@@ -158,10 +158,10 @@ M→O: RDFプロパティの変更
 参照しているRDFSプロパティ名の変更
 """"""""""""""""""""""""""""""""""
 
-:numref:`rename-rdf-property` では，RDFSプロパティex:著作者が定義されていない状態で，ユーザがRDFリソースex:民情一新が持つプロパティex:著者をex:著作者に変更している．ここでは，整合性を保つためにRDFSプロパティ名の変更をユーザが選択している．RDFSプロパティex:著者をex:著作者に変更することにより，ex:学問のすゝめが持つプロパティex:著者もex:著作者に半自動的に変更される．
+:numref:`rename-rdf-property` では，RDFSプロパティex:作者が定義されていない状態で，ユーザがRDFリソースex:民情一新が持つプロパティex:著者をex:作者に変更している．ここでは，整合性を保つためにRDFSプロパティ名の変更をユーザが選択している．RDFSプロパティex:著者をex:作者に変更することにより，ex:学問のすゝめが持つプロパティex:著者もex:作者に半自動的に変更される．
 
 .. _rename-rdf-property:
-.. figure:: figures/rename_rdf_property.png
+.. figure:: figures/rename_rdf_property.svg
    :scale: 80 %
    :alt: 参照しているRDFSプロパティ名の変更
    :align: center
@@ -172,10 +172,10 @@ M→O: RDFプロパティの変更
 RDFSプロパティの新規作成
 """"""""""""""""""""""""
 
-:numref:`make-property` では，RDFSプロパティex:著作者が定義されていない状態で，ユーザがRDFリソースex:民情一新が持つプロパティex:著者をex:著作者に変更している．ここでは，整合性を保つためにRDFSプロパティの新規作成をユーザが選択している．RDFSプロパティex:著作者を新規に作成することによって，整合性を保つことができる．
+:numref:`make-property` では，RDFSプロパティex:作者が定義されていない状態で，ユーザがRDFリソースex:民情一新が持つプロパティex:著者をex:作者に変更している．ここでは，整合性を保つためにRDFSプロパティの新規作成をユーザが選択している．RDFSプロパティex:作者を新規に作成することによって，整合性を保つことができる．
 
 .. _make-property: 
-.. figure:: figures/make_rdfs_property.png
+.. figure:: figures/make_rdfs_property.svg
    :scale: 80 %
    :alt: RDFSプロパティの新規作成
    :align: center
@@ -195,7 +195,7 @@ RDF文書をRDF(S) コンテンツ構築支援ツールにインポートする�
 :numref:`import-rdf` の左側は，RDF文書をインポートする前の状態を表しており，右側はRDF文書をインポートした後の状態を表している．RDFリソースex:学問のすゝめとex:民情一新のタイプex:書籍は，RDFSクラスとして定義されていない．RDFプロパティex:著者も同様に，RDFSプロパティとして定義されてない．整合性を保つために，RDFSクラスex:書籍とRDFSプロパティex:著者は，インポート時に自動的に作成される．
 
 .. _import-rdf:
-.. figure:: figures/import_rdf.png
+.. figure:: figures/import_rdf.svg
    :scale: 80 %
    :alt: RDF文書のインポート
    :align: center
@@ -221,11 +221,8 @@ RDF(S) コンテンツ構築支援ツールでは，ユーザはメタクラス�
 
 整合性チェック機能
 ~~~~~~~~~~~~~~~~~~
-整合性チェック機能により，RDF(S)コンテンツ構築中の任意の時点で，RDFSプロパティの定義域および値域に違反するRDFコンテンツのステートメントをユーザに提示することができる．RDF(S)コンテンツ構築支援ツールは，RDFプロパティの定義を容易に行うことができるように，RDFSプロパティの定義域および値域の整合性チェックをリアルタイムに行わない．整合性チェックには，vOWLidatorを用いている．
+整合性チェック機能により，RDF(S)コンテンツ構築中の任意の時点で，RDFSプロパティの定義域および値域に違反するRDFコンテンツのステートメントをユーザに提示することができる．RDF(S)コンテンツ構築支援ツールは，RDFプロパティの定義を容易に行うことができるように，RDFSプロパティの定義域および値域の整合性チェックをリアルタイムに行わない．整合性チェックには，`vOWLidator <http://projects.semwebcentral.org/projects/vowlidator/>`_ を用いている．
 
 .. note ::
     オントロジーベースのツールでは，RDFS プロパティの定義域および値域を定義しなければ，RDF コンテンツ構築時にRDF プロパティが利用できない．RDF(S) コンテンツ構築支援ツールでは，RDFS プロパティの定義域および値域の定義を行うことなく，RDF プロパティの定義を行うことができる．
 
-TODO
-----
-* 図をきれいに作りなおす

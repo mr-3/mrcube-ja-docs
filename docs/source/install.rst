@@ -37,4 +37,4 @@ MR\ :sup:`3` \は，以下のライブラリを使用しています．
 * `Jakarta ORO <http://attic.apache.org/projects/jakarta-oro.html>`_
 * `Silk Icons <http://www.famfamfam.com/>`_
 * `exewrap <http://exewrap.osdn.jp/>`_
-
+* `vOWLidator <http://projects.semwebcentral.org/projects/vowlidator/>`_ 
