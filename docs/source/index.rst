@@ -6,10 +6,6 @@
 MR\ :sup:`3` \ドキュメント
 ==========================
 
-http://mrcube.org/documentation/?lang=ja から移行中です．
-
-TODOセクションに，今後修正すべき箇所を列挙しています．
-
 .. toctree::
    :caption: ユーザドキュメント
 
@@ -17,7 +13,7 @@ TODOセクションに，今後修正すべき箇所を列挙しています．
    install
    rdf_and_rdfs_contents_management
    mrcube_functions
-   mrcube_implementation
+   mrcube_user_manual
    tutorial
 
 .. toctree::
