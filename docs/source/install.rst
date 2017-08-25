@@ -8,7 +8,7 @@
 動作環境
 --------
    
-MR\ :sup:`3` \は，Java言語で実装されています．実行するには，JRE (Java Runtime Environment) 5または，それ以上が必要です．
+MR\ :sup:`3` \は，Java言語で実装されています．実行するには，JRE (Java Runtime Environment) 8または，それ以上が必要です．
 
 動作確認は，以下の環境で行っています．
 
@@ -28,13 +28,13 @@ MR\ :sup:`3` \は，Java言語で実装されています．実行するには�
 ----------------------
 MR\ :sup:`3` \は，以下のライブラリを使用しています．
 
-* `JGraph <http://www.jgraph.com/>`_
-* `Jena 2 Semantic Web Toolkit <http://jena.apache.org/>`_
-* `InfoNode Docking Windows <http://www.infonode.net/index.html?idw>`_
-* `JGraphAddons <http://www.jgraph.com/>`_
-* `Drawing	Graphs with VGJ <http://www.eng.auburn.edu/department/cse/research/graph_drawing/graph_drawing.html>`_
-* `JFontChooser <http://jfontchooser.osdn.jp/>`_
-* `Jakarta ORO <http://attic.apache.org/projects/jakarta-oro.html>`_
-* `Silk Icons <http://www.famfamfam.com/>`_
-* `exewrap <http://exewrap.osdn.jp/>`_
-* `vOWLidator <http://projects.semwebcentral.org/projects/vowlidator/>`_ 
+
+* `JGraph and JGraphAddons <http://www.jgraph.com/>`_ (`License <https://github.com/jgraph/legacy-jgraph5/blob/master/LICENSE>`_)
+* `Apache Jena <https://jena.apache.org/>`_ (`License <http://www.apache.org/licenses/LICENSE-2.0>`_)
+* `InfoNode Docking Windows <http://www.infonode.net/index.html?idw>`_ (`License <http://www.infonode.net/index.html?idwlicense>`_)
+* `Drawing Graphs with VGJ <http://www.eng.auburn.edu/department/cse/research/graph_drawing/graph_drawing.html>`_ (`License <http://www.eng.auburn.edu/department/cse/research/graph_drawing/COPYING>`_)
+* `JFontChooser <http://jfontchooser.sourceforge.jp/>`_ (`License <http://sourceforge.jp/softwaremap/trove_list.php?form_cat=188>`_)
+* `Apache ORO <http://attic.apache.org/projects/jakarta-oro.html>`_ (`License <http://www.apache.org/licenses/LICENSE-2.0>`_)
+* `Silk Icons <http://www.famfamfam.com>`_ (`License <http://creativecommons.org/licenses/by/2.5/>`_)
+* `exewrap <http://exewrap.sourceforge.jp/>`_ (`License <http://exewrap.sourceforge.jp/#license>`_) 
+
