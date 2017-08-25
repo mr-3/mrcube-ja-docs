@@ -11,9 +11,9 @@ MR\ :sup:`3` \ドキュメント
 
    about
    install
-   rdf_and_rdfs_contents_management
-   mrcube_functions
-   mrcube_user_manual
+   key_concepts
+   functions
+   user_manual
    tutorial
 
 .. toctree::
