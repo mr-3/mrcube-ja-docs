@@ -8,22 +8,31 @@
 ------------------------------   
 概要
 ------------------------------   
-本チュートリアルでは，`RDF Primer <https://www.w3.org/TR/2004/REC-rdf-primer-20040210/>`_ の中で紹介されているRDF文書(Example 1: RDF/XML Describing Eric Miller)をMR\ :sup:`3` \ 1.0を用いて作成していく．MR\ :sup:`3` \を 用いてRDFコンテンツを作成する方法には，RDFSコンテンツを作成した後に(RDFSコンテンツの語彙を用いて)RDFコンテンツを作成する方法 (トップダウン）とRDFコンテンツから作成する方法（ボトムアップ）がある．トップダウンでは，あらかじめRDFSコンテンツをインポートすることで， インポートしたRDFSコンテンツ(語彙）を用いてRDFコンテンツの作成ができる．ボトムアップでは，RDFモデルを作成しながら，RDFモデルの作成 に必要なリソースのタイプやプロパティを抽出し，RDFSクラスやプロパティに反映することができる．本チュートリアルでは，MR\ :sup:`3` \を用いて，トップダウンとボトムアップの2通りの方法で，以下に示すサンプルRDF文書の作成を行う．本チュートリアルと同様のRDF文書作成動画は `デモムービーのページ <http://mrcube.org/videos-ja.html>`_ から見ることができる．また，最後に，RDFS文書の置換機能の実行例を示す．
+本チュートリアルでは，`RDF Primer <https://www.w3.org/TR/rdf11-primer/>`_ の中で紹介されているRDF文書をMR\ :sup:`3` \ を用いて作成していく．MR\ :sup:`3` \を 用いてRDFコンテンツを作成する方法には，RDFSコンテンツを作成した後に(RDFSコンテンツの語彙を用いて)RDFコンテンツを作成する方法 (トップダウン）とRDFコンテンツから作成する方法（ボトムアップ）がある．トップダウンでは，あらかじめRDFSコンテンツをインポートすることで， インポートしたRDFSコンテンツ(語彙）を用いてRDFコンテンツの作成ができる．ボトムアップでは，RDFモデルを作成しながら，RDFモデルの作成 に必要なリソースのタイプやプロパティを抽出し，RDFSクラスやプロパティに反映することができる．本チュートリアルでは，MR\ :sup:`3` \を用いて，トップダウンとボトムアップの2通りの方法で，以下に示すサンプルRDF文書の作成を行う．本チュートリアルと同様のRDF文書作成動画は `デモムービーのページ <http://mrcube.org/videos-ja.html>`_ から見ることができる．
 
-Example 1: RDF/XML Describing Eric Miller
+.. code-block:: turtle
 
-.. code-block:: xml
-
-    <?xml version="1.0"?>
-    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-             xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact#">
-
-      <contact:Person rdf:about="http://www.w3.org/People/EM/contact#me">
-        <contact:fullName>Eric Miller</contact:fullName>
-        <contact:mailbox rdf:resource="mailto:em@w3.org"/>
-        <contact:personalTitle>Dr.</contact:personalTitle>
-      </contact:Person>
-    </rdf:RDF>
+    BASE   <http://example.org/>
+    PREFIX bob: <http://example.org/bob#>
+    PREFIX alice: <http://example.org/alice#>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX schema: <http://schema.org/>
+    PREFIX dcterms: <http://purl.org/dc/terms/>
+    PREFIX wd: <http://www.wikidata.org/entity/>
+ 
+    bob:me
+        a foaf:Person ;
+        foaf:knows alice:me ;
+        schema:birthDate "1990-07-04"^^xsd:date ;
+        foaf:topic_interest wd:Q12418 .
+   
+    wd:Q12418
+        dcterms:title "Mona Lisa" ;
+        dcterms:creator <http://dbpedia.org/resource/Leonardo_da_Vinci> .
+  
+    <http://data.europeana.eu/item/04802/243FA8618938F4117025F17A8B813C5F9AA4D619>
+        dcterms:subject wd:Q12418 .
 
 ---------------------------------------------
 RDFコンテンツの作成 （トップダウン）
@@ -31,24 +40,41 @@ RDFコンテンツの作成 （トップダウン）
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. RDFコンテンツ作成に利用する接頭辞と名前空間の登録
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-はじめに，RDFコンテンツ作成に必要な名前空間を名前空間テーブルに登録する．名前空間テーブルを表示するためには，ツールバーの |nstable| アイコンまたはウィンドウメニューの「名前空間テーブルを表示」を選択する．以下の図は，接頭辞を”contact”，対応する名前空間を”http: //www.w3.org/2000/10/swap/pim/contact#”として名前空間テーブルに登録した状態を示している．接頭辞テキスト フィールドと名前空間テキストフィールドにそれぞれ，登録したい接頭辞および名前空間を入力し，”追加”ボタンを押すと接頭辞と対応する名前空間が名前空間テーブルに登録される．名前空間テーブルに登録された接頭辞は，各要素(RDFリソース，RDFプロパティ，RDFSクラス，RDFSプロパティ）作成する際に用いられる．
+はじめに，RDFコンテンツ作成に必要な名前空間を名前空間テーブルに登録する．名前空間テーブルを表示するためには，ツールバーの |nstable| アイコンまたはウィンドウメニューの「名前空間テーブルを表示」を選択する．以下の図は，以下に示す名前空間接頭辞と名前空間の対応関係を名前空間テーブルに登録した状態を示している．名前空間接頭辞: mr3, rdf, rdfs, owlは，初期状態で登録されている．
+
+.. csv-table::
+   :header: 接頭辞, 名前空間
+   :widths: 5, 30 
+
+   mr3, http://mrcube.org#
+   rdf, http://www.w3.org/1999/02/22-rdf-syntax-ns#
+   rdfs, http://www.w3.org/2000/01/rdf-schema#
+   owl, http://www.w3.org/2002/07/owl#
+   foaf, http://xmlns.com/foaf/0.1/
+   schema, http://schema.org/
+   dcterms, http://purl.org/dc/terms/
+   wd, http://www.wikidata.org/entity/
+   bob,  http://example.org/bob#
+   alice,  http://example.org/alice#
+
+接頭辞テキスト フィールドと名前空間テキストフィールドにそれぞれ，登録したい接頭辞および名前空間を入力し，”追加”ボタンを押すと接頭辞と対応する名前空間が名前空間テーブルに登録される．名前空間テーブルに登録された接頭辞は，各要素(RDFリソース，RDFプロパティ，RDFSクラス，RDFSプロパティ）作成する際に用いられる．
 
 .. |nstable| image:: figures/toolbar/namespace_table.png 
 
 .. figure:: figures/top-down-step1.png
-   :scale: 40 %
+   :scale: 25 %
    :align: center
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 2. RDFSクラスの挿入
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RDFSクラスの挿入を行う．クラスエディタ内で右クリックをしてポップアップメニューを出す．ポップアップメニュー の中の「クラスの挿入」メニューを選択し，RDFSクラスの挿入を行う．サンプルRDF文書内では，contact:Personがhttp: //www.w3.org/People/EM/contact#meリソースのタイプとなっている．MR\ :sup:`3` \では，RDFリソースのタイプは，RDFSクラスから選択する．RDFSクラスは，クラスエディタ内で定義する．
+RDFSクラスの挿入を行う．クラスエディタ内で右クリックをしてポップアップメニューを出す．ポップアップメニュー の中の「クラスの挿入」メニューを選択し，RDFSクラスの挿入を行う．サンプルRDF文書内では，"foaf:Person"が"bob:me"リソースのタイプとなっている．MR\ :sup:`3` \では，RDFリソースのタイプは，RDFSクラスから選択する．RDFSクラスは，クラスエディタ内で定義する．
 
 .. figure:: figures/top-down-step2-1.png
-   :scale: 40 %
+   :scale: 25 %
    :align: center
 
-「クラスの挿入」メニューを選択すると，以下のダイアログが表示される．「接頭辞コンボボックス」から名前空間テーブルに登録した接頭辞contactを選択し，「IDテキストフィールド」にPersonを入力する．「了解ボタン」をクリックするとクラスエディタ内に RDFSクラス（この場合，contact:Person）が挿入される．
+「クラスの挿入」メニューを選択すると，以下のダイアログが表示される．「接頭辞コンボボックス」から名前空間テーブルに登録した接頭辞foafを選択し，「IDテキストフィールド」にPersonを入力する．「了解ボタン」をクリックするとクラスエディタ内に RDFSクラス "foaf:Person" が挿入される．
 
 .. figure:: figures/top-down-step2-2.png
    :scale: 50 %
@@ -57,16 +83,16 @@ RDFSクラスの挿入を行う．クラスエディタ内で右クリックを�
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 3. RDFSプロパティの挿入
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-RDFSクラスと同様にExample 1文書内に含まれるRDFSプロパティ(contact:fullName，contact:mailbox，contact: personalTitle )も作成する．プロパティエディタ内で右クリックするとポップアップメニューが表示される．「プロパティの挿入」メニューを選択すると以下のダイアログが表示される．「了解ボタン」をクリックするとプロパティエディタ内にRDFSプロパティが挿入される．MR\ :sup:`3` \では，RDFプロパティは，RDFSプロパティから選択する．RDFSプロパティは，プロパティエディタ内で定義する．
+RDFSクラスと同様にExample 1文書内に含まれるRDFSプロパティ(foaf:knows, schema:birthDate, foaf:topic_interest, dcterms:title, dcterms:creator, dcterms:subject) も作成する．プロパティエディタ内で右クリックするとポップアップメニューが表示される．「プロパティの挿入」メニューを選択すると以下のダイアログが表示される．「了解ボタン」をクリックするとプロパティエディタ内にRDFSプロパティが挿入される．MR\ :sup:`3` \では，RDFプロパティは，RDFSプロパティから選択する．RDFSプロパティは，プロパティエディタ内で定義する．
 
 .. figure:: figures/top-down-step3-1.png
-   :scale: 100 %
+   :scale: 50 %
    :align: center
 
-contact:Personクラスとcontact:fullName，contact:mailbox，contact:personalTitleプロパティをMR\ :sup:`3` \で作成すると以下の図のようになる．
+RDFSクラス "foaf:Person" とRDFSプロパティ foaf:knows, schema:birthDate, foaf:topic_interest, dcterms:title, dcterms:creator, dcterms:subject をMR\ :sup:`3` \で作成すると以下の図のようになる．
 
 .. figure:: figures/top-down-step3-2.png
-   :scale: 60 %
+   :scale: 25 %
    :align: center
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -75,20 +101,16 @@ contact:Personクラスとcontact:fullName，contact:mailbox，contact:personalT
 次に，手順1から3までで，作成したRDFSクラス及びプロパティを用いてRDFコンテンツの作成を行う．まずは， RDFリソースを作成する．RDFリソースは，RDFエディタ内で定義する．RDFエディタ内で右クリックするとポップアップメニューが表示される．ポップアップメニュー内の「RDFリソースの挿入」メニューを選択し，RDFリソースの挿入を行う．
 
 .. figure:: figures/top-down-step4-1.png
-   :scale: 40 %
+   :scale: 25 %
    :align: center
 
-「RDFリソースの挿入」メニューを選択すると以下のダイアログが表示される．「リソースタイプコンボボックス」からリソースのタイプを選択する．リソースのタイプは，クラスエディタで作成されたRDFSクラスから選択できる．ここでは，contact:Personクラスをリソースのタイプとして選択する．また，「http://www.w3.org/People/EM/contact#me」をRDFリソーステキストフィールドに入力する．リソースのタイプとRDFリソースを入力し，「了解ボタン」をクリックするとRDFリソースがRDFエディタに挿入される．
+「RDFリソースの挿入」メニューを選択すると以下のダイアログが表示される．「リソースタイプコンボボックス」からリソースのタイプを選択する．リソースのタイプは，クラスエディタで作成されたRDFSクラスから選択できる．ここでは，foaf:Personクラスをリソースのタイプとして選択する．また，「http://example.org/bob#me」をRDFリソーステキストフィールドに入力する．リソースのタイプとRDFリソースを入力し，「了解ボタン」をクリックするとRDFリソースがRDFエディタに挿入される．
 
 .. figure:: figures/top-down-step4-2.png
-   :scale: 100 %
+   :scale: 50 %
    :align: center
 
-
-同様に，mailto:em@w3.orgリソースを挿入する．
-
-.. note:
-   **http://www.w3.org/People/EM/contact#**を，今回は名前空間テーブルに登録していないため，名前空間およびそのIDをここでは入力している．登録してある場合は接頭辞コンボボックスから登録した接頭辞を選択することで，名前空間の入力を省略できる．また，「ブランクチェックボックス」にチェックをいれるとブランクノードとなる．
+同様に，リソースを挿入する．
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 5. RDFリテラルの挿入
@@ -204,143 +226,3 @@ RDFコンテンツの作成 （ボトムアップ）
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 トップダウン手法の手順7とほぼ同様にRDF/XML形式でRDF文書をファイルに保存する．
 
----------------------------------------------
-RDFSの置換例
----------------------------------------------
-
-以下の図に示すように，インポートダイアログにおいて，「データタイプ」に「RDFS」，「インポート方法」に「置き換え」を選択して，実行するとRDFS の置換を行うことができる．以下の説明の中で，接頭辞animalは，http://example.com/animal#をあらわす．接頭辞mr3は， http://mr3.sourceforege.net#をあらわす．
-
-.. figure:: figures/import_dialog_rdfs_replace.png
-   :scale: 70 %
-   :align: center
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-置換前
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-例として，以下のRDFs文書のRDFSの置換を行う．以下のRDFs文書には「mr3:動物」クラスのサブクラス に，「mr3:猫」クラスと「mr3:犬」クラスがある．また，RDFモデルには，「mr3:ポチ」（「mr3:犬」クラスのインスタンス）と「mr3:タマ」 （「mr3:猫」クラスのインスタンス）リソースが定義されており，「mr3:ポチ」と「mr3:タマ」には，「mr3:じゃれる」という関係がある．
-
-変換前のRDFS
-
-.. code-block:: xml
-
-    <?xml version="1.0"?>
-    <rdf:RDF
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:owl="http://www.w3.org/2002/07/owl#"
-        xmlns:mr3="http://mr3.sourceforge.net#"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:animal="http://example.com/animal#"
-        xml:base="http://mr3.sourceforge.net#">
-        <rdfs:Class rdf:ID="犬">
-            <rdfs:subClassOf>
-            <rdfs:Class rdf:ID="動物"/>
-            </rdfs:subClassOf>
-        </rdfs:Class>
-        <rdfs:Class rdf:ID="猫">
-            <rdfs:subClassOf rdf:resource="#動物"/>
-        </rdfs:Class>
-        <rdf:Property rdf:ID="じゃれる"/>
-    </rdf:RDF>
-
-      
-変換前のRDF
-
-.. code-block:: xml
-
-    <?xml version="1.0"?>
-    <rdf:RDF
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:owl="http://www.w3.org/2002/07/owl#"
-        xmlns:mr3="http://mr3.sourceforge.net#"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:animal="http://example.com/animal#"
-        xml:base="http://mr3.sourceforge.net#">
-        <mr3:犬 rdf:ID="ポチ">
-            <mr3:じゃれる>
-                <mr3:猫 rdf:ID="タマ"/>
-            </mr3:じゃれる>
-        </mr3:犬>
-    </rdf:RDF>
-
-
-.. figure:: figures/rdfs_replace_before.png
-   :scale: 60 %
-   :align: center
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
-置換するクラス及びプロパティ
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-以下のRDFSを置換前のRDFSと置き換える．
-
-置換するRDFS
-
-.. code-block:: xml
-
-    <?xml version="1.0"?>
-    <rdf:RDF
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:owl="http://www.w3.org/2002/07/owl#"
-        xmlns:mr3="http://mr3.sourceforge.net#"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:animal="http://example.com/animal#"
-        xml:base="http://mr3.sourceforge.net#">
-      <rdfs:Class rdf:about="http://example.com/animal#動物"/>
-      <rdfs:Class rdf:about="http://example.com/animal#猫">
-        <rdfs:subClassOf rdf:resource="http://example.com/animal#動物"/>
-      </rdfs:Class>
-      <rdfs:Class rdf:about="http://example.com/animal#犬">
-        <rdfs:subClassOf rdf:resource="http://example.com/animal#動物"/>
-      </rdfs:Class>
-      <rdf:Property rdf:about="http://example.com/animal#じゃれる"/>
-    </rdf:RDF>
-
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  
-RDFS置換ダイアログ
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-RDFSの置換を実行するとRDFS置換ダイアログが表示される．RDFS置換ダイアログには，置換前と置換後のクラスとプロパティのリストが表示される．上，下のボタンを押して，置換前と置換後のクラス及びプロパティを同じ行に合わせることで，置換するクラス及びプロパティを指定することができる．ここでは，「mr3:動物」クラスを「animal:動物」クラスに，「mr3:犬」クラスを「animal:犬」クラスに，「mr3:猫」クラスを「animal:猫」クラスに置換する．また，「mr3:じゃれる」プロパティを「animal:じゃれる」プロパティに置換する．以下の図のようにして， 適用するボタンを押すと置換が行われる．置換前と置換後のリストの項目の初期位置は，以下の優先順で決められる．
-
-1. URIが同一の場合
-2. IDが同一の場合
-
-1と2に該当するクラス及びプロパティがない場合には，NULLとなる．NULLまたは，置換前よりも置換後のクラス及びプロパティの数が少ない場合には，クラスは空に，プロパティは「mr3:nil」となる．
-
-.. figure:: figures/rdfs_replace_dialog.png
-   :scale: 80 %
-   :align: center
-   
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-置換後
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-置換後は，以下のようになる．RDFSを置換したことで，RDFモデルのリソースのタイプやプロパティの置換も同時に行われる．今回の例では，リソース「ポチ」のタイプが「mr3:犬」から「animal:犬」に，リソース「タマ」のタイプが「mr3:猫」から「animal:猫」に変更されている．また，ポチとタマの関係が「mr3:じゃれる」プロパティから「animal:じゃれる」プロパティに変更されている．
-
-置換後のRDF
-
-.. code-block:: xml
-
-    <?xml version="1.0"?>
-    <rdf:RDF
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-        xmlns:owl="http://www.w3.org/2002/07/owl#"
-        xmlns:mr3="http://mr3.sourceforge.net#"
-        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-        xmlns:animal="http://example.com/animal#"
-        xml:base="http://mr3.sourceforge.net#">
-      <animal:犬 rdf:ID="ポチ">
-        <animal:じゃれる>
-          <animal:猫 rdf:ID="タマ"/>
-        </animal:じゃれる>
-      </animal:犬>
-    </rdf:RDF>
-
-     
-.. figure:: figures/rdfs_replace_after.png
-   :scale: 60 %
-   :align: center     
-   
-   
