@@ -11,7 +11,7 @@ MR\ :sup:`3` \のアーキテクチャ
 .. _mr3-architecture:
 
 .. figure:: figures/implementation_architecture_of_mr3.svg
-   :scale: 60 %
+   :scale: 50 %
    :alt: MR\ :sup:`3` \の実装アーキテクチャ
    :align: center
 
@@ -24,7 +24,7 @@ MR\ :sup:`3` \のシステム構成図
 .. _system-overview:
 
 .. figure:: figures/system_overview_of_mr3.svg
-   :scale: 60 %
+   :scale: 50 %
    :alt: MR\ :sup:`3` \のシステム構成
    :align: center
 
@@ -507,7 +507,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
  .. _import-dialog:
  .. figure:: figures/import_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: インポートダイアログ
    :align: center
 
@@ -550,7 +550,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 .. _export-dialog:
 
 .. figure:: figures/export_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt:  エクスポートダイアログ
    :align: center
 
@@ -655,22 +655,6 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
    設定ダイアログ: レンダリング    
 
-
-拡張機能
----------
-「ツール」メニューの「拡張機能」を選択すると，:numref:`plugin-dialog` に示すダイアログが表示される．
-「拡張機能」には，設定ダイアログの「ディレクトリ」項目のプラグインディレクトリに指定したディレクトリに含まれる
-jarファイルを読み込んで，プラグインリストを表示する．プラグインを選択すると，説明が画面下部に表示され，
-「実行」ボタンを押すと，プラグインが実行される．プラグイン作成方法については，:doc:`plugin_development` 参照いただきたい．
-
-
-.. _plugin-dialog:
-.. figure:: figures/plugin_dialog.png
-   :scale: 80 %
-   :alt:  拡張機能
-   :align: center
-
-   拡張機能
 
 整合性検証
 -----------
@@ -891,7 +875,7 @@ MR3について
  .. figure:: figures/toolbar/rdf_editor.png         RDFエディタを前面に表示する                                   
  .. figure:: figures/toolbar/class_editor.png       クラスエディタを前面に表示する                                   
  .. figure:: figures/toolbar/property_editor.png    プロパティエディタを前面に表示する                                 
- .. figure:: figures/toolbar/attr_dialog.png        アトリビュートダイアログを前面に表示する                              
+ .. figure:: figures/toolbar/attribute_dialog.png        アトリビュートダイアログを前面に表示する                              
  .. figure:: figures/toolbar/namespace_table.png    名前空間テーブルを前面に表示する                                  
  .. figure:: figures/toolbar/cpr.png                クラス，プロパティ，RDFエディタを表示する
  .. figure:: figures/toolbar/cr.png                 クラス，RDFエディタを表示する

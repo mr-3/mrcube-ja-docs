@@ -16,11 +16,6 @@ MR\ :sup:`3` \ドキュメント
    user_manual
    tutorial
 
-.. toctree::
-   :caption: 開発者ドキュメント
-
-   plugin_development       
-
 索引
 ----
 * :ref:`genindex`
