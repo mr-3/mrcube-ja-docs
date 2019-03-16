@@ -297,7 +297,7 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'MRCube 1.0 ドキュメント'
+epub_title = u'MRCube 2019.03_1 ドキュメント'
 epub_author = author
 epub_publisher = author
 epub_copyright = copyright

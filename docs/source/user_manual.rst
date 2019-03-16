@@ -11,7 +11,7 @@ MR\ :sup:`3` \のアーキテクチャ
 .. _mr3-architecture:
 
 .. figure:: figures/implementation_architecture_of_mr3.svg
-   :scale: 60 %
+   :scale: 50 %
    :alt: MR\ :sup:`3` \の実装アーキテクチャ
    :align: center
 
@@ -24,7 +24,7 @@ MR\ :sup:`3` \のシステム構成図
 .. _system-overview:
 
 .. figure:: figures/system_overview_of_mr3.svg
-   :scale: 60 %
+   :scale: 50 %
    :alt: MR\ :sup:`3` \のシステム構成
    :align: center
 
@@ -507,7 +507,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
  .. _import-dialog:
  .. figure:: figures/import_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: インポートダイアログ
    :align: center
 
@@ -550,7 +550,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 .. _export-dialog:
 
 .. figure:: figures/export_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt:  エクスポートダイアログ
    :align: center
 
