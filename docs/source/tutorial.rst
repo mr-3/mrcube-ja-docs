@@ -157,13 +157,13 @@ RDFプロパティを編集するためには，アトリビュートダイア�
 
 作成したRDFコンテンツが，どのように出力されるかを確認するには，RDFソースコードビューアを表示する．RDFソースコードビューアは，ツールメニューのRDFソースコードビューアを選択するか，ツールバーの |rdf_source_code_viewer| を選択する．ラジオボタンから構文として，**Turtle**，**JSONLD**，**XML**，**N-Triples** の形式が選択できる．ボタンを選択すると，指定した構文でRDFソースコードが表示される．
 
-.. |rdf_source_code_viewer| image:: figures/toolbar/baseline_code_black_18dp.png 
+.. |rdf_source_code_viewer| image:: figures/toolbar/code.png 
 
 .. figure:: figures/top-down-step7-2.png
    :scale: 50 %
    :align: center
 
-作成したRDFコンテンツをファイルに出力したい場合には，ファイルメニューの「名前を付けて保存」ボタンを選択する．「保存」ダイアログが表示されるため，保存したいフォルダを選択し，「ファイルのタイプ」からエクスポートしたいRDFの形式を選択し，「保存」ボタンを押すと，RDFコンテンツが指定した形式でファイルに保存される．ここでは，「Turtle（*.ttl)」を選択してTurtle形式でファイルを保存する．
+作成したRDFコンテンツをファイルに出力したい場合には，ファイルメニューの「名前を付けて保存」ボタンを選択する．「保存」ダイアログが表示されるため，保存したいフォルダを選択し，「ファイルのタイプ」からエクスポートしたいRDFの形式を選択し，「保存」ボタンを押すと，RDFコンテンツが指定した形式でファイルに保存される．ここでは，「Turtle（¥*.ttl)」を選択してTurtle形式でファイルを保存する．
 
 .. figure:: figures/top-down-step7-3.png
    :scale: 50 %
