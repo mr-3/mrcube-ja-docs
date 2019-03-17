@@ -32,7 +32,7 @@ MR\ :sup:`3` \のシステム構成図
 
 MR\ :sup:`3` \の画面構成
 ------------------------
-:numref:`mr3-screenshot` にMR\ :sup:`3` \のグラフィカルモデラのスクリーンショットを示す．グラフィカルモデラは，RDFエディタ，クラスエディタ，プロパティエディタ，アトリビュートダイアログ，名前空間テーブル，削除ダイアログ，リソース検索ダイアログ，インポートダイアログ，エクスポートダイアログ，設定ダイアログから構成される．
+:numref:`mr3-screenshot` にMR\ :sup:`3` \のグラフィカルモデラのスクリーンショットを示す．グラフィカルモデラは，RDFエディタ，クラスエディタ，プロパティエディタ，属性ダイアログ，名前空間テーブル，削除ダイアログ，リソース検索ダイアログ，設定ダイアログから構成される．
 
  .. _mr3-screenshot:
  .. figure:: figures/screenshot_of_mr3.png
@@ -47,11 +47,11 @@ MR\ :sup:`3` \の画面構成
 
 RDFエディタ
 -----------
-RDFエディタでは，RDFリソース，RDFリソースのタイプ，RDFプロパティ，RDFリテラルの編集を行う．:numref:`rdf-editor` に示すように，RDFリソースは楕円，RDFプロパティは矢印，RDFリテラルは矩形でRDFエディタ内に表示される．RDFリソースのタイプはRDFリソースの右上に表示される．
+RDFエディタでは，RDFリソース，RDFリソースのタイプ，RDFプロパティ，RDFリテラルの編集を行う．:numref:`rdf-editor` に示すように，RDFリソースは楕円，RDFプロパティは矢印，RDFリテラルは矩形でRDFエディタ内に表示される．RDFリソースのタイプはRDFリソースの左上に表示される．
 
 .. _rdf-editor:
 .. figure:: figures/rdf_editor.png
-   :scale: 40 %
+   :scale: 30 %
    :alt: RDFエディタ
    :align: center
 
@@ -117,37 +117,37 @@ RDFからプロパティへ変換
     RDFリソース，プロパティ，リテラルをペーストする．
 削除
     RDFリソース，プロパティ，リテラルを削除する．
-アトリビュートダイアログを表示
-    アトリビュートダイアログを表示する 
+属性ダイアログを表示
+    属性ダイアログを表示する 
 
 RDFリソースの属性編集
 ~~~~~~~~~~~~~~~~~~~~~
-RDFエディタ内のRDFリソースを選択すると，アトリビュートダイアログにRDFリソースの属性が表示される（ :numref:`attr-rdf-res-uri` から :numref:`attr-rdf-literal` ）．RDFリソースの属性編集では，RDFリソースのURI，RDFリソースのタイプ，RDFリソースが空白ノード(blank node) かどうかの選択，RDFリソースのラベルおよびコメントを編集することができる．ここで，空白ノードとは，URI により名前付けしないRDFリソースを表す．空白ノードは外部から参照することはできない．しかし，ステートメントにおける主語または目的語になることができ，URI により名前付けしにくいRDFリソースを記述したり，複数のRDFプロパティを構造化したRDFコンテンツを表現するために用いられる．
+RDFエディタ内のRDFリソースを選択すると，属性ダイアログにRDFリソースの属性が表示される（ :numref:`attr-rdf-res-uri` から :numref:`attr-rdf-literal` ）．RDFリソースの属性編集では，RDFリソースのURI，RDFリソースのタイプ，RDFリソースが空白ノード(blank node) かどうかの選択，RDFリソースのラベルおよびコメントを編集することができる．ここで，空白ノードとは，URI により名前付けしないRDFリソースを表す．空白ノードは外部から参照することはできない．しかし，ステートメントにおける主語または目的語になることができ，URI により名前付けしにくいRDFリソースを記述したり，複数のRDFプロパティを構造化したRDFコンテンツを表現するために用いられる．
 
-RDFリソースのURI を設定したい場合には， :numref:`attr-rdf-res-uri` に示すように，アトリビュートダイアログ左側の一覧から「URI」を選択する．「接頭辞」コンボボックスには，名前空間テーブルに登録されている名前空間接頭辞の一覧が表示される．「接頭辞」コンボボックスから名前空間接頭辞を選択すると，対応する名前空間が「RDFリソース」テキストフィールドに出力される．ユーザは，「RDFリソース」テキストフィールドに設定したいRDFリソースのURI を入力する．RDFリソースを空白ノードとしたい場合には，「ブランク」チェックボックスにチェックをいれる．
+RDFリソースのURI を設定したい場合には， :numref:`attr-rdf-res-uri` に示すように，属性ダイアログ左側の一覧から「URI」を選択する．「接頭辞」コンボボックスには，名前空間テーブルに登録されている名前空間接頭辞の一覧が表示される．「接頭辞」コンボボックスから名前空間接頭辞を選択すると，対応する名前空間が「RDFリソース」テキストフィールドに出力される．ユーザは，「RDFリソース」テキストフィールドに設定したいRDFリソースのURI を入力する．RDFリソースを空白ノードとしたい場合には，「ブランク」チェックボックスにチェックをいれる．
 
 .. _attr-rdf-res-uri:
 .. figure:: figures/attribute_dialog_rdf_resource_uri.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFリソースのURI）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFリソースのURI）
    :align: center
 
-   アトリビュートダイアログ（RDFリソースのURI）
+   属性ダイアログ（RDFリソースのURI）
 
 
-RDFリソースのタイプを設定したい場合には， :numref:`attr-rdf-res-type` に示すように，アトリビュートダイアログ左側の一覧から「タイプ」を選択する．RDFリソースタイプを入力するには，「タイプ」チェックボックスをチェックする．RDFリソースのタイプを空にするには，「タイプ」チェックボックスのチェックをはずす．「タイプ選択」ボタンをクリックすると， :numref:`rdf-res-type-selection-dialog` に示す「RDFリソースタイプ選択」ダイアログが表示される．「RDFリソースタイプ選択」ダイアログには，クラスエディタで構築したクラス階層が表示される．RDFリソースのタイプとしたいクラスを選択すると，「RDFリソースタイプ選択」ダイアログのURI ラベルに，選択したクラスのURI が表示される．「了解」ボタンをクリックすると，アトリビュートダイアログの「接頭辞」コンボボックスと「リソースタイプID」テキストフィールドに，「RDFリソースタイプ選択」ダイアログで選択したURI が設定される．クラスエディタで定義されていないクラスのURI をRDFリソースのタイプとして入力した場合，RDF(S)コンテンツ管理機能が働き， :numref:`rdf-and-rdfs-management-dialog` に示す「RDF(S)コンテンツ管理」ダイアログが表示される．RDF(S)コンテンツ管理ダイアログでは，RDFSクラス名の変更またはRDFSクラスの新規作成のどちらかをユーザは選択することができる．「ジャンプクラス」ボタンをクリックすると，そのRDFリソースのタイプと対応するクラスエディタ内のRDFSクラスへジャンプする．また，アトリビュートダイアログにそのRDFSクラスの属性が表示される．
+RDFリソースのタイプを設定したい場合には， :numref:`attr-rdf-res-type` に示すように，属性ダイアログ左側の一覧から「タイプ」を選択する．RDFリソースタイプを入力するには，「タイプ」チェックボックスをチェックする．RDFリソースのタイプを空にするには，「タイプ」チェックボックスのチェックをはずす．「タイプ選択」ボタンをクリックすると， :numref:`rdf-res-type-selection-dialog` に示す「RDFリソースタイプ選択」ダイアログが表示される．「RDFリソースタイプ選択」ダイアログには，クラスエディタで構築したクラス階層が表示される．RDFリソースのタイプとしたいクラスを選択すると，「RDFリソースタイプ選択」ダイアログのURI ラベルに，選択したクラスのURI が表示される．「了解」ボタンをクリックすると，属性ダイアログの「接頭辞」コンボボックスと「リソースタイプID」テキストフィールドに，「RDFリソースタイプ選択」ダイアログで選択したURI が設定される．クラスエディタで定義されていないクラスのURI をRDFリソースのタイプとして入力した場合，RDF(S)コンテンツ管理機能が働き， :numref:`rdf-and-rdfs-management-dialog` に示す「RDF(S)コンテンツ管理」ダイアログが表示される．RDF(S)コンテンツ管理ダイアログでは，RDFSクラス名の変更またはRDFSクラスの新規作成のどちらかをユーザは選択することができる．「ジャンプクラス」ボタンをクリックすると，そのRDFリソースのタイプと対応するクラスエディタ内のRDFSクラスへジャンプする．また，属性ダイアログにそのRDFSクラスの属性が表示される．
 
 .. _attr-rdf-res-type:
 .. figure:: figures/attribute_dialog_rdf_resource_type.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFリソースのタイプ）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFリソースのタイプ）
    :align: center
 
-   アトリビュートダイアログ（RDFリソースのタイプ）
+   属性ダイアログ（RDFリソースのタイプ）
 
 .. _rdf-res-type-selection-dialog:
 .. figure:: figures/rdf_resource_type_selection_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: RDFリソースタイプ選択ダイアログ
    :align: center
 
@@ -155,61 +155,61 @@ RDFリソースのタイプを設定したい場合には， :numref:`attr-rdf-r
 
 .. _rdf-and-rdfs-management-dialog:
 .. figure:: figures/rdf_and_rdfs_management_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: RDF(S)コンテンツ管理ダイアログ
    :align: center
 
    RDF(S)コンテンツ管理ダイアログ
 
 
-RDFリソースに対して，rdfs:label プロパティを用いてRDFリソースのラベルを記述したい場合には， :numref:`attr-rdf-res-label` に示すように，アトリビュートダイアログ左側の一覧から「ラベル」を選択する．「言語」テキストフィールドに言語を，「ラベル」テキストフィールドにラベルを入力し，「追加」ボタンを押すと，アトリビュートダイアログ中央のテーブルに言語とラベルが追加される．テーブルの行を選択し，「削除」ボタンを押すと選択したラベルを削除することができる．
+RDFリソースに対して，rdfs:label プロパティを用いてRDFリソースのラベルを記述したい場合には， :numref:`attr-rdf-res-label` に示すように，属性ダイアログ左側の一覧から「ラベル」を選択する．「言語」テキストフィールドに言語を，「ラベル」テキストフィールドにラベルを入力し，「追加」ボタンを押すと，属性ダイアログ中央のテーブルに言語とラベルが追加される．テーブルの行を選択し，「削除」ボタンを押すと選択したラベルを削除することができる．
 
 .. _attr-rdf-res-label:
 .. figure:: figures/attribute_dialog_rdf_resource_label.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFリソースのラベル）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFリソースのラベル）
    :align: center
 
-   アトリビュートダイアログ（RDFリソースのラベル）
+   属性ダイアログ（RDFリソースのラベル）
 
 
-RDFリソースに対して，rdfs:comment プロパティを用いてRDFリソースのコメントを記述したい場合には， :numref:`attr-rdf-res-comment` に示すように，アトリビュートダイアログ左側の一覧から「コメント」を選択する．「追加」ボタンを押すと，「コメント編集」ダイアログが表示される．「言語」テキストフィールドに言語を，「ラベル」テキストフィールドにラベルを入力し，「了解」ボタンを押すと，アトリビュートダイアログ中央のテーブルに言語とコメントが追加される．テーブルの行を選択し，「編集」ボタンを押すと「コメント編集」ダイアログが表示され，コメントを編集することができる．テーブルの行を選択し，「削除」ボタンを押すと選択したコメントを削除することができる．
+RDFリソースに対して，rdfs:comment プロパティを用いてRDFリソースのコメントを記述したい場合には， :numref:`attr-rdf-res-comment` に示すように，属性ダイアログ左側の一覧から「コメント」を選択する．「追加」ボタンを押すと，「コメント編集」ダイアログが表示される．「言語」テキストフィールドに言語を，「ラベル」テキストフィールドにラベルを入力し，「了解」ボタンを押すと，属性ダイアログ中央のテーブルに言語とコメントが追加される．テーブルの行を選択し，「編集」ボタンを押すと「コメント編集」ダイアログが表示され，コメントを編集することができる．テーブルの行を選択し，「削除」ボタンを押すと選択したコメントを削除することができる．
 
 .. _attr-rdf-res-comment:
 .. figure:: figures/attribute_dialog_rdf_resource_comment.png
-   :scale: 40 %
-   :alt: アトリビュートダイアログ（RDFリソースのコメント）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFリソースのコメント）
    :align: center
 
-   アトリビュートダイアログ（RDFリソースのコメント）
+   属性ダイアログ（RDFリソースのコメント）
 
 
 RDFプロパティの属性編集
 ~~~~~~~~~~~~~~~~~~~~~~~
-RDFエディタ内のRDFプロパティを選択すると，アトリビュートダイアログにRDFプロパティの属性が表示される（ :numref:`attr-rdf-property` ）．RDFプロパティの属性編集では，RDFプロパティのURI を編集することができる．「コンテナ」チェックボックスにチェックをして，数値を入力するとrdf: 1…rdf: n プロパティの入力を行うことができる．「プロパティの接頭辞のみ表示」チェックボックスにチェックをいれると，プロパティエディタで定義されているプロパティがもつ名前空間URI に対応する名前空間接頭辞のみを「接頭辞」コンボボックスから選択可能となる．チェックをはずすと，名前空間テーブルに登録されているすべての接頭辞を選択可能となる．
+RDFエディタ内のRDFプロパティを選択すると，属性ダイアログにRDFプロパティの属性が表示される（ :numref:`attr-rdf-property` ）．RDFプロパティの属性編集では，RDFプロパティのURI を編集することができる．「コンテナ」チェックボックスにチェックをして，数値を入力するとrdf: 1…rdf: n プロパティの入力を行うことができる．「プロパティの接頭辞のみ表示」チェックボックスにチェックをいれると，プロパティエディタで定義されているプロパティがもつ名前空間URI に対応する名前空間接頭辞のみを「接頭辞」コンボボックスから選択可能となる．チェックをはずすと，名前空間テーブルに登録されているすべての接頭辞を選択可能となる．
 
 .. _attr-rdf-property:
 .. figure:: figures/attribute_dialog_rdf_property.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFプロパティ）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFプロパティ）
    :align: center
 
-   アトリビュートダイアログ（RDFプロパティ）
+   属性ダイアログ（RDFプロパティ）
 
 
-プロパティエディタで定義されていないプロパティのURI を入力した場合，RDF(S)コンテンツ管理機能が働き， :numref:`rdf-and-rdfs-management-dialog` に示す「RDF(S)コンテンツ管理」ダイアログが表示される．RDF(S)コンテンツ管理ダイアログでは，RDFSプロパティ名の変更またはRDFSプロパティの新規作成のどちらかをユーザは選択することができる．プロパティエディタ内で定義されているプロパティの中で，名前空間接頭辞に対応する名前空間URI をもつプロパティのID が「プロパティID」リストに表示される．「プロパティ」ボタンをクリックすると，選択したRDFプロパティに対応するプロパティエディタ内のRDFSプロパティにジャンプし，アトリビュートダイアログにそのRDFSプロパティの属性が表示される．
+プロパティエディタで定義されていないプロパティのURI を入力した場合，RDF(S)コンテンツ管理機能が働き， :numref:`rdf-and-rdfs-management-dialog` に示す「RDF(S)コンテンツ管理」ダイアログが表示される．RDF(S)コンテンツ管理ダイアログでは，RDFSプロパティ名の変更またはRDFSプロパティの新規作成のどちらかをユーザは選択することができる．プロパティエディタ内で定義されているプロパティの中で，名前空間接頭辞に対応する名前空間URI をもつプロパティのID が「プロパティID」リストに表示される．「プロパティ」ボタンをクリックすると，選択したRDFプロパティに対応するプロパティエディタ内のRDFSプロパティにジャンプし，属性ダイアログにそのRDFSプロパティの属性が表示される．
 
 RDFリテラルの属性編集
 ~~~~~~~~~~~~~~~~~~~~~
-RDFエディタ内のRDFリテラルを選択すると，アトリビュートダイアログにRDFリテラルの属性が表示される（ :numref:`attr-rdf-literal` ）．RDFリテラルの編集では，リテラルの内容，言語属性（xml:lang 属性），データタイプの編集を行うことができる．「リテラル」テキストエリアには，リテラルの内容を入力する．「言語」テキストフィールドには，リテラルの記述言語を入力する．リテラルのデータタイプを設定したい場合には，「タイプ」チェックボックスにチェックを入れて，「タイプ」コンボボックスからデータタイプを選択することができる．リテラルのデータタイプを必要としない場合には，「タイプ」チェックボックスのチェックをはずす．言語とリテラルのタイプは排他的であり，どちらか一方しか設定することはできない
+RDFエディタ内のRDFリテラルを選択すると，属性ダイアログにRDFリテラルの属性が表示される（ :numref:`attr-rdf-literal` ）．RDFリテラルの編集では，リテラルの内容，言語属性（xml:lang 属性），データタイプの編集を行うことができる．「リテラル」テキストエリアには，リテラルの内容を入力する．「言語」テキストフィールドには，リテラルの記述言語を入力する．リテラルのデータタイプを設定したい場合には，「タイプ」チェックボックスにチェックを入れて，「タイプ」コンボボックスからデータタイプを選択することができる．リテラルのデータタイプを必要としない場合には，「タイプ」チェックボックスのチェックをはずす．言語とリテラルのタイプは排他的であり，どちらか一方しか設定することはできない
 
 .. _attr-rdf-literal:
 .. figure:: figures/attribute_dialog_rdf_literal.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFリテラル）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFリテラル）
    :align: center
 
-   アトリビュートダイアログ（RDFリテラル）
+   属性ダイアログ（RDFリテラル）
 
 
 .. index:: クラスエディタ
@@ -221,7 +221,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _class-editor:
 .. figure:: figures/class_editor.png
-   :scale: 40 %
+   :scale: 30 %
    :alt: クラスエディタ
    :align: center
    
@@ -286,36 +286,36 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
     クラスとクラス間の関係をカットする．
 削除
     クラスとクラス間の関係を削除する．
-アトリビュートダイアログを表示
-    アトリビュートダイアログを表示する．
+属性ダイアログを表示
+    属性ダイアログを表示する．
 
 クラスエディタの属性編集
 ~~~~~~~~~~~~~~~~~~~~~~~~
-クラスエディタ内のRDFSクラスを選択すると，RDFSクラスの属性がアトリビュートダイアログに表示される（ :numref:`attr-class-basic` から :numref:`attr-class-upper-class` ）．アトリビュートダイアログ左側のリストから「基本」，「ラベル」，「コメント」，「インスタンス」，「上位クラス」項目を選択し，RDFSクラスの属性の編集を行う．「基本」では，リソースタイプおよびURI を編集することができる（ :numref:`attr-class-basic` ）．リソースタイプで選択できる項目は，「設定」ダイアログのクラスクラスリストから追加および削除を行うことができる．「ラベル」では，rdfs:label プロパティの編集を行うことができる．「コメント」では，rdfs:commentの編集を行うことができる．ラベルとコメントの編集方法は，RDFリソースと同様である．「インスタンス」には選択したRDFSクラスのインスタンスのリストが表示される（ :numref:`attr-class-instance` ）．リスト中の項目をクリックすると対応するRDFエディタ内のRDFリソースにジャンプし，そのRDFリソースの属性がアトリビュートダイアログに表示される．「上位クラス」には，選択したRDFSクラスの上位クラスのリストが表示される（ :numref:`attr-class-upper-class` ）．
+クラスエディタ内のRDFSクラスを選択すると，RDFSクラスの属性が属性ダイアログに表示される（ :numref:`attr-class-basic` から :numref:`attr-class-upper-class` ）．属性ダイアログ左側のリストから「基本」，「ラベル」，「コメント」，「インスタンス」，「上位クラス」項目を選択し，RDFSクラスの属性の編集を行う．「基本」では，リソースタイプおよびURI を編集することができる（ :numref:`attr-class-basic` ）．リソースタイプで選択できる項目は，「設定」ダイアログのクラスクラスリストから追加および削除を行うことができる．「ラベル」では，rdfs:label プロパティの編集を行うことができる．「コメント」では，rdfs:commentの編集を行うことができる．ラベルとコメントの編集方法は，RDFリソースと同様である．「インスタンス」には選択したRDFSクラスのインスタンスのリストが表示される（ :numref:`attr-class-instance` ）．リスト中の項目をクリックすると対応するRDFエディタ内のRDFリソースにジャンプし，そのRDFリソースの属性が属性ダイアログに表示される．「上位クラス」には，選択したRDFSクラスの上位クラスのリストが表示される（ :numref:`attr-class-upper-class` ）．
 
 .. _attr-class-basic:
 .. figure:: figures/attribute_dialog_rdfs_class_basic.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFSクラスの基本）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFSクラスの基本）
    :align: center
    
-   アトリビュートダイアログ（RDFSクラスの基本）
+   属性ダイアログ（RDFSクラスの基本）
  
 .. _attr-class-instance:
 .. figure:: figures/attribute_dialog_rdfs_class_instance.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFSクラスのインスタンス）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFSクラスのインスタンス）
    :align: center
    
-   アトリビュートダイアログ（RDFSクラスのインスタンス）
+   属性ダイアログ（RDFSクラスのインスタンス）
   
 .. _attr-class-upper-class:
 .. figure:: figures/attribute_dialog_rdfs_class_upper_class.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFSクラスの上位クラス）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFSクラスの上位クラス）
    :align: center
    
-   アトリビュートダイアログ（RDFSクラスの上位クラス）
+   属性ダイアログ（RDFSクラスの上位クラス）
 
 
 .. index:: プロパティエディタ
@@ -327,7 +327,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _property-editor:
 .. figure:: figures/property_editor.png
-   :scale: 40 %
+   :scale: 30 %
    :alt: プロパティエディタ
    :align: center
    
@@ -362,7 +362,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 
 .. _property-editor-popup-menu-1:
-.. figure:: figures/popup_menu_selected_property_editor.png
+.. figure:: figures/popup_menu_property_editor.png
    :scale: 50 %
    :alt: ノードが選択されていない状態
    :align: center
@@ -394,47 +394,38 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
     プロパティとプロパティ間関係をペーストする．
 削除
     プロパティとプロパティ間関係を削除する．
-アトリビュートダイアログを表示
-    アトリビュートダイアログを表示する．
+属性ダイアログを表示
+    属性ダイアログを表示する．
 
 プロパティエディタの属性編集
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-プロパティエディタ内のRDFS プロパティを選択すると，RDFS プロパティの属性がアトリビュートダイアログに表示される（ :numref:`attr-property-region` ， :numref:`attr-property-instance` ， :numref:`attr-property-upper-property` ）．アトリビュートダイアログ左側のリストには，「基本」，「ラベル」，「コメント」，「範囲」，「インスタンス」，「上位プロパティ」項目が表示される．「基本」，「ラベル」，「コメント」の編集項目はRDFSクラスと同様である．「基本」のリソースタイプは，「設定」ダイアログのプロパティクラスリストから追加および削除を行うことができる．「範囲」にはRDFS プロパティの定義域および値域をクラスエディタから選択できる（ :numref:`attr-property-region` ）．「インスタンス」には選択したRDFS プロパティを有するRDF リソースのリストが表示される（ :numref:`attr-property-instance` ）．リスト中の項目をクリックした際の動作は，RDFS クラスの場合と同様である．「上位プロパティ」には選択したRDFS プロパティの上位プロパティが表示される（ :numref:`attr-property-upper-property` ）．
+プロパティエディタ内のRDFS プロパティを選択すると，RDFS プロパティの属性が属性ダイアログに表示される（ :numref:`attr-property-region` ， :numref:`attr-property-instance` ）．属性ダイアログ左側のリストには，「基本」，「ラベル」，「コメント」，「範囲」，「インスタンス」，「上位プロパティ」項目が表示される．「基本」，「ラベル」，「コメント」の編集項目はRDFSクラスと同様である．「基本」のリソースタイプは，「設定」ダイアログのプロパティクラスリストから追加および削除を行うことができる．「範囲」にはRDFS プロパティの定義域および値域をクラスエディタから選択できる（ :numref:`attr-property-region` ）．「インスタンス」には選択したRDFS プロパティを有するRDF リソースのリストが表示される（ :numref:`attr-property-instance` ）．リスト中の項目をクリックした際の動作は，RDFS クラスの場合と同様である．「上位プロパティ」には選択したRDFS プロパティの上位プロパティが表示される．
 
 .. _attr-property-region:
 .. figure:: figures/attribute_dialog_rdfs_property_region.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFSプロパティの範囲）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFSプロパティの範囲）
    :align: center
    
-   アトリビュートダイアログ（RDFSプロパティの範囲）
+   属性ダイアログ（RDFSプロパティの範囲）
   
 .. _attr-property-instance:
 .. figure:: figures/attribute_dialog_rdfs_property_instance.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFSプロパティのインスタンス）
+   :scale: 50 %
+   :alt: 属性ダイアログ（RDFSプロパティのインスタンス）
    :align: center
    
-   アトリビュートダイアログ（RDFSプロパティのインスタンス）
-  
-.. _attr-property-upper-property:
-.. figure:: figures/attribute_dialog_rdfs_property_upper_property.png
-   :scale: 80 %
-   :alt: アトリビュートダイアログ（RDFSプロパティの上位クラス）
-   :align: center
-   
-   アトリビュートダイアログ（RDFSプロパティの上位クラス）
-
+   属性ダイアログ（RDFSプロパティのインスタンス）
 
 .. index:: リソース検索ダイアログ
 
 リソース検索ダイアログ
 ----------------------
-リソース検索ダイアログでは，RDF エディタ，クラスエディタ，プロパティエディタ内に定義されているRDF(S) 要素の検索を行うことができる． :numref:`resource-search-dialog` にリソース検索ダイアログを示す．「グラフタイプ」内の「RDF」，「クラス」，「プロパティ」チェックボックスのいずれか一つを選択し，検索範囲を設定する．「URI」テキストフィールドに検索したいURI を入力すると，「グラフタイプ」内で選択されたチェックボックスの検索範囲内でリソースを検索する．該当するリソース一覧が， :numref:`resource-search-dialog` 下部の「検索結果」リストに表示される．「検索結果」リストの項目を選択すると，選択したリソースを含むエディタ内のノードへジャンプし，アトリビュートダイアログにそのリソースの属性が表示される．「ラベル」と「コメント」テキストフィールドには，それぞれ，「rdfs:label」プロパティ値と「rdfs:comment」プロパティ値を対象に検索を行うことができる．表示方法は，「URI」テキストフィールドにおける検索と同様である．
+リソース検索ダイアログでは，RDF エディタ，クラスエディタ，プロパティエディタ内に定義されているRDF(S) 要素の検索を行うことができる． :numref:`resource-search-dialog` にリソース検索ダイアログを示す．「グラフタイプ」内の「RDF」，「クラス」，「プロパティ」チェックボックスのいずれか一つを選択し，検索範囲を設定する．「URI」テキストフィールドに検索したいURI を入力すると，「グラフタイプ」内で選択されたチェックボックスの検索範囲内でリソースを検索する．該当するリソース一覧が， :numref:`resource-search-dialog` 下部の「検索結果」リストに表示される．「検索結果」リストの項目を選択すると，選択したリソースを含むエディタ内のノードへジャンプし，属性ダイアログにそのリソースの属性が表示される．「ラベル」と「コメント」テキストフィールドには，それぞれ，「rdfs:label」プロパティ値と「rdfs:comment」プロパティ値を対象に検索を行うことができる．表示方法は，「URI」テキストフィールドにおける検索と同様である．
 
  .. _resource-search-dialog:
  .. figure:: figures/resource_search_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: リソース検索ダイアログ
    :align: center
 
@@ -450,7 +441,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _namespace-table:
 .. figure:: figures/namespace_table.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 名前空間テーブル
    :align: center
 
@@ -465,7 +456,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _remove-dialog:
 .. figure:: figures/remove_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 削除ダイアログ
    :align: center
 
@@ -560,7 +551,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 .. _config-basic:
 
 .. figure:: figures/config_dialog_basic.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 設定ダイアログ: 基本
    :align: center
 
@@ -572,7 +563,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _config-directory:
 .. figure:: figures/config_dialog_directory.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 設定ダイアログ: ディレクトリ
    :align: center
 
@@ -584,7 +575,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _config-proxy:
 .. figure:: figures/config_dialog_proxy.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 設定ダイアログ: プロキシ
    :align: center
 
@@ -598,7 +589,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _config-metaclass:
 .. figure:: figures/config_dialog_metaclass.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 設定ダイアログ: メタクラス
    :align: center
 
@@ -610,34 +601,20 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _config-layout:
 .. figure:: figures/config_dialog_layout.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: 設定ダイアログ: レイアウト
    :align: center
 
    設定ダイアログ: レイアウト
-
-レンダリング
-~~~~~~~~~~~~
-設定ダイアログの「レンダリング」項目（ :numref:`config-rendering` ）では，RDFリソース，RDFリテラル，RDFSクラス，RDFSプロパティの各ノードの色や，ノード選択時の色，エディタウィンドウの背景職をカスタマイズすることができる．「ノードに色をつける」チェックボックスのチェックをはずすと，すべてのノードが無色となる．「アンチエイリアス」チェックボックスにチェックをいれると各ノードの縁が滑らかに表示される．
-
-.. _config-rendering:
-.. figure:: figures/config_dialog_rendering.png
-   :scale: 80 %
-   :alt: 設定ダイアログ: レンダリング
-   :align: center
-
-   設定ダイアログ: レンダリング    
-
 
 整合性検証
 -----------
 「ツール」メニューの「整合性検証」を選択すると，:numref:`validator-dialog` に示すダイアログが表示される．
 「整合性検証」では，Jenaの `org.apache.jena.reasoner.ValidityReport <https://jena.apache.org/documentation/javadoc/jena/org/apache/jena/reasoner/ValidityReport.html>`_ を利用し，リテラルのデータ型がプロパティの値域の定義に基いて定義されているかどうかなどを検証することができる．
 
-
 .. _validator-dialog:
 .. figure:: figures/validator_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt:  整合性検証
    :align: center
 
@@ -651,7 +628,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _project-info-dialog:
 .. figure:: figures/project_info_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: プロジェクト情報
    :align: center
 
@@ -666,7 +643,7 @@ RDFエディタ内のRDFリテラルを選択すると，アトリビュート�
 
 .. _log-console:
 .. figure:: figures/log_console.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: ログ・コンソール
    :align: center
 
@@ -678,7 +655,7 @@ MR3について
 
 .. _about-mr3:
 .. figure:: figures/about_dialog.png
-   :scale: 80 %
+   :scale: 50 %
    :alt: MR3について
    :align: center
 
@@ -767,7 +744,7 @@ MR3について
 * ウィンドウ->RDFエディタを前面に表示
 * ウィンドウ->クラスエディタを前面に表示
 * ウィンドウ->プロパティエディタを前面に表示
-* ウィンドウ->アトリビュートダイアログを表示
+* ウィンドウ->属性ダイアログを表示
 * ウィンドウ->名前空間テーブルを表示
 
 * ウィンドウレイアウト->ウィンドウ再配置(C,P,R)
@@ -827,7 +804,7 @@ MR3について
  .. figure:: figures/toolbar/rdf_editor.png         RDFエディタを前面に表示する                                   
  .. figure:: figures/toolbar/class_editor.png       クラスエディタを前面に表示する                                   
  .. figure:: figures/toolbar/property_editor.png    プロパティエディタを前面に表示する                                 
- .. figure:: figures/toolbar/attribute_dialog.png        アトリビュートダイアログを前面に表示する                              
+ .. figure:: figures/toolbar/attribute_dialog.png   属性ダイアログを前面に表示する                              
  .. figure:: figures/toolbar/namespace_table.png    名前空間テーブルを前面に表示する                                  
  .. figure:: figures/toolbar/cpr.png                クラス，プロパティ，RDFエディタを表示する
  .. figure:: figures/toolbar/cr.png                 クラス，RDFエディタを表示する
@@ -863,7 +840,7 @@ Alt+C
 Alt+P
     プロパティエディタを前面に表示
 Alt+A
-    アトリビュートダイアログを前面に表示
+    属性ダイアログを前面に表示
 Alt+S
     ソースダイアログを前面に表示
 Alt+N
