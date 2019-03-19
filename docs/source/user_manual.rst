@@ -61,21 +61,22 @@ RDFエディタのツールバー
 ~~~~~~~~~~~~~~~~~~~~~~~
 以下にRDFエディタのツールバーにおけるアイコンと対応する機能を示す．
 
-================================================== ===================================================================
-        アイコン                                      機能                                                             
-================================================== ===================================================================
- .. figure:: figures/toolbar/resource.png           RDFリソースを挿入する      
- .. figure:: figures/toolbar/literal.png            RDFリテラルを挿入する                           
- .. figure:: figures/toolbar/copy.png               ノードをコピーする                                         
- .. figure:: figures/toolbar/cut.png                ノードをカットする                                         
- .. figure:: figures/toolbar/paste.png              ノードをペーストする                                        
- .. figure:: figures/toolbar/delete.png             ノードを削除する                                          
- .. figure:: figures/toolbar/undo.png               アンドゥ
- .. figure:: figures/toolbar/redo.png               リドゥ
- .. figure:: figures/toolbar/export_graph_img.png   RDFグラフを画像ファイルに保存する
- .. figure:: figures/toolbar/l_to_r_layout.png      RDFグラフの自動整列を実行する
- .. figure:: figures/toolbar/open_resource.png      選択したリソースを開く
-================================================== ===================================================================
+.. csv-table::
+   :header: アイコン, 機能
+   :align: center
+   :widths: 3, 10 
+
+   .. figure:: figures/toolbar/resource.png, RDFリソースを挿入する      
+   .. figure:: figures/toolbar/literal.png, RDFリテラルを挿入する                           
+   .. figure:: figures/toolbar/copy.png,               ノードをコピーする                                         
+   .. figure:: figures/toolbar/cut.png,               ノードをカットする                                         
+   .. figure:: figures/toolbar/paste.png,              ノードをペーストする                                        
+   .. figure:: figures/toolbar/delete.png,             ノードを削除する                                          
+   .. figure:: figures/toolbar/undo.png,               アンドゥ
+   .. figure:: figures/toolbar/redo.png,               リドゥ
+   .. figure:: figures/toolbar/export_graph_img.png,   RDFグラフを画像ファイルに保存する
+   .. figure:: figures/toolbar/l_to_r_layout.png,      RDFグラフの自動整列を実行する
+   .. figure:: figures/toolbar/open_resource.png,      選択したリソースを開く
 
 RDFエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -225,22 +226,22 @@ RDFエディタ内のRDFリテラルを選択すると，属性ダイアログ�
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 以下にクラスエディタのツールバーにおけるアイコンと対応する機能を示す．
 
-======================================================= ===================================================================
-        アイコン                                          機能                                                             
-======================================================= ===================================================================
- .. figure:: figures/toolbar/resource.png                RDFSクラスを挿入する    
- .. figure:: figures/toolbar/copy.png                    ノードをコピーする                                         
- .. figure:: figures/toolbar/cut.png                     ノードをカットする                                         
- .. figure:: figures/toolbar/paste.png                   ノードをペーストする                                        
- .. figure:: figures/toolbar/delete.png                  ノードを削除する                                          
- .. figure:: figures/toolbar/undo.png                    アンドゥ
- .. figure:: figures/toolbar/redo.png                    リドゥ
- .. figure:: figures/toolbar/export_graph_img.png        RDFグラフを画像ファイルに保存する
- .. figure:: figures/toolbar/l_to_r_layout.png           RDFグラフの自動整列を実行（左から右）する
- .. figure:: figures/toolbar/u_to_d_layout.png           RDFグラフの自動整列を実行（右から左）する
- .. figure:: figures/toolbar/open_resource.png           選択したリソースを開く
-======================================================= ===================================================================
+.. csv-table::
+   :header: アイコン, 機能
+   :align: center
+   :widths: 3, 10 
 
+    .. figure:: figures/toolbar/resource.png,                RDFSクラスを挿入する    
+    .. figure:: figures/toolbar/copy.png,                    ノードをコピーする                                         
+    .. figure:: figures/toolbar/cut.png,                     ノードをカットする                                         
+    .. figure:: figures/toolbar/paste.png,                   ノードをペーストする                                        
+    .. figure:: figures/toolbar/delete.png,                  ノードを削除する                                          
+    .. figure:: figures/toolbar/undo.png,                    アンドゥ
+    .. figure:: figures/toolbar/redo.png,                    リドゥ
+    .. figure:: figures/toolbar/export_graph_img.png,        RDFグラフを画像ファイルに保存する
+    .. figure:: figures/toolbar/l_to_r_layout.png,           RDFグラフの自動整列を実行（左から右）する
+    .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（右から左）する
+    .. figure:: figures/toolbar/open_resource.png,           選択したリソースを開く
 
 クラスエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -332,21 +333,22 @@ RDFエディタ内のRDFリテラルを選択すると，属性ダイアログ�
 
 以下にプロパティエディタのツールバーにおけるアイコンと対応する機能を示す．
 
-======================================================= ===================================================================
-        アイコン                                          機能                                                             
-======================================================= ===================================================================
- .. figure:: figures/toolbar/resource.png                RDFSプロパティを挿入する    
- .. figure:: figures/toolbar/copy.png                    ノードをコピーする                                         
- .. figure:: figures/toolbar/cut.png                     ノードをカットする                                         
- .. figure:: figures/toolbar/paste.png                   ノードをペーストする                                        
- .. figure:: figures/toolbar/delete.png                  ノードを削除する                                          
- .. figure:: figures/toolbar/undo.png                    アンドゥ
- .. figure:: figures/toolbar/redo.png                    リドゥ
- .. figure:: figures/toolbar/export_graph_img.png        RDFグラフを画像ファイルに保存する
- .. figure:: figures/toolbar/l_to_r_layout.png           RDFグラフの自動整列を実行（左から右）
- .. figure:: figures/toolbar/u_to_d_layout.png           RDFグラフの自動整列を実行（右から左）
- .. figure:: figures/toolbar/open_resource.png           選択したリソースを開く
-======================================================= ===================================================================
+.. csv-table::
+   :header: アイコン, 機能
+   :align: center
+   :widths: 3, 10 
+     
+   .. figure:: figures/toolbar/resource.png,                RDFSプロパティを挿入する    
+   .. figure:: figures/toolbar/copy.png,                    ノードをコピーする                                         
+   .. figure:: figures/toolbar/cut.png,                     ノードをカットする                                         
+   .. figure:: figures/toolbar/paste.png,                   ノードをペーストする                                        
+   .. figure:: figures/toolbar/delete.png,                  ノードを削除する                                          
+   .. figure:: figures/toolbar/undo.png,                    アンドゥ
+   .. figure:: figures/toolbar/redo.png,                    リドゥ
+   .. figure:: figures/toolbar/export_graph_img.png,        RDFグラフを画像ファイルに保存する
+   .. figure:: figures/toolbar/l_to_r_layout.png,           RDFグラフの自動整列を実行（左から右）
+   .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（右から左）
+   .. figure:: figures/toolbar/open_resource.png,           選択したリソースを開く
 
 プロパティエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -649,173 +651,111 @@ MR^3について
 ファイルメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* 新規
-
-    * MR\ :sup:`3` \のプロジェクトを新規に作成する．現在の作成中のプロジェクトは，保存するか破棄するかを選択する．
-
-* 開く
-
-    * RDFファイル(Turtle, XML, JSONLD, N-Triples形式)またはMR\ :sup:`3` \のプロジェクトファイルを開く．
-
-* 保存
-
-    * RDFファイル(Turtle, XML, JSONLD, N-Triples形式)またはMR\ :sup:`3` \のプロジェクトファイルを保存する．
-
-* 名前をつけて保存
-
-    * RDFファイル(Turtle, XML, JSONLD, N-Triples形式)またはMR\ :sup:`3` \のプロジェクトファイルを別名で保存する．
-
-* 終了
-
-    * プログラムを終了する．
+新規
+    MR\ :sup:`3` \のプロジェクトを新規に作成する．現在の作成中のプロジェクトは，保存するか破棄するかを選択する．
+開く
+    RDFファイル(Turtle, XML, JSONLD, N-Triples形式)またはMR\ :sup:`3` \のプロジェクトファイルを開く．
+保存
+    RDFファイル(Turtle, XML, JSONLD, N-Triples形式)またはMR\ :sup:`3` \のプロジェクトファイルを保存する．
+名前をつけて保存
+    RDFファイル(Turtle, XML, JSONLD, N-Triples形式)またはMR\ :sup:`3` \のプロジェクトファイルを別名で保存する．
+終了
+    プログラムを終了する．
 
 表示メニュー
 ~~~~~~~~~~~~~~~~~~~~~~
-
-* URI
-
-    * 各エディタのノード内に表示されるラベルを，URI形式で表示する．名前空間テーブルで接頭辞の表示を有効にしている場合，名前空間を接頭辞に置き換えて表示する．
-
-* ID
-
-    * 各エディタのノード内に表示されるラベルを，ID形式で表示する．
-
-* ラベル
-
-    * 各エディタのノード内に表示されるラベルを，rdfs:labelで定義されたラベルで表示する．rdfs:labelが定義されていない場合には，URI形式で表示する．
-
-* リソースタイプ
-
-    * RDFリソースのタイプの表示・非表示を行う．
-
-* RDFプロパティ
-
-    * RDFプロパティの表示・非表示を行う．
-
-* ツールチップ
-
-    * ツールチップの表示・非表示を行う．
-
-* RDFグラフレイアウト（左から右）
-
-    * RDFエディタの自動レイアウト（左から右）を実行する
-
-* クラスグラフレイアウト（左から右）
-
-    * クラスエディタの自動レイアウト（左から右）を実行する
-
-* クラスグラフレイアウト（上から下）
-
-    * クラスエディタの自動レイアウト（上から下）を実行する
-
-* プロパティグラフレイアウト（左から右）
-
-    * プロパティエディタの自動レイアウト（左から右）を実行する
-
-* プロパティグラフレイアウト（上から下）
-
-    * プロパティエディタの自動レイアウト（上から下）を実行する
+URI
+    各エディタのノード内に表示されるラベルを，URI形式で表示する．名前空間テーブルで接頭辞の表示を有効にしている場合，名前空間を接頭辞に置き換えて表示する．
+ID
+    各エディタのノード内に表示されるラベルを，ID形式で表示する．
+ラベル
+    各エディタのノード内に表示されるラベルを，rdfs:labelで定義されたラベルで表示する．rdfs:labelが定義されていない場合には，URI形式で表示する．
+リソースタイプ
+    RDFリソースのタイプの表示・非表示を行う．
+RDFプロパティ
+    RDFプロパティの表示・非表示を行う．
+ツールチップ
+    ツールチップの表示・非表示を行う．
+RDFグラフレイアウト（左から右）
+    RDFエディタの自動レイアウト（左から右）を実行する
+クラスグラフレイアウト（左から右）
+    クラスエディタの自動レイアウト（左から右）を実行する
+クラスグラフレイアウト（上から下）
+    クラスエディタの自動レイアウト（上から下）を実行する
+プロパティグラフレイアウト（左から右）
+    プロパティエディタの自動レイアウト（左から右）を実行する
+プロパティグラフレイアウト（上から下）
+    プロパティエディタの自動レイアウト（上から下）を実行する
 
 ウィンドウメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* RDFエディタのオーバービュー
-
-    * RDFエディタの全体を表示する．表示されるウィンドウ内の赤色の四角をドラッグすることで，RDFエディタ内の移動を行うことができる．また，四角の右下部分をドラッグして，四角の大きさを変更することにより，拡大・縮小を行うことができる．大きくすると拡大し，小さくすると縮小する．
-
-* クラスエディタのオーバービュー
-
-    * クラスエディタの全体を表示する．機能は，RDFエディタと同様．
-
-* プロパティエディタのオーバービュー
-
-    * プロパティエディタの全体を表示する．機能は，RDFエディタと同様．
-    
-* 属性ダイアログ
-
-    * 属性ダイアログを表示する．
-
-* 名前空間テーブル
-
-    * 名前空間テーブルを表示する．
-
-* ウィンドウ再配置(C,P,R)
-
-    * クラスエディタ，プロパティエディタ，RDFエディタを表示
-
-* ウィンドウ再配置(C,R)
-
-    * クラスエディタとRDFエディタのみを表示
-
-* ウィンドウ再配置(P,R)
-
-    * プロパティエディタとRDFエディタのみを表示
+RDFエディタのオーバービュー
+    RDFエディタの全体を表示する．表示されるウィンドウ内の赤色の四角をドラッグすることで，RDFエディタ内の移動を行うことができる．また，四角の右下部分をドラッグして，四角の大きさを変更することにより，拡大・縮小を行うことができる．大きくすると拡大し，小さくすると縮小する．
+クラスエディタのオーバービュー
+    クラスエディタの全体を表示する．機能は，RDFエディタと同様．
+プロパティエディタのオーバービュー
+    プロパティエディタの全体を表示する．機能は，RDFエディタと同様．
+属性ダイアログ
+    属性ダイアログを表示する．
+名前空間テーブル
+    名前空間テーブルを表示する．
+ウィンドウ再配置(C,P,R)
+    クラスエディタ，プロパティエディタ，RDFエディタを表示
+ウィンドウ再配置(C,R)
+    クラスエディタとRDFエディタのみを表示
+ウィンドウ再配置(P,R)
+    プロパティエディタとRDFエディタのみを表示
 
 ツールメニュー
 ~~~~~~~~~~~~~~~~~~~~~
-* RDFソースコードビューア
-
-    * RDFソースコードを表示するダイアログが表示される
-
-* 検索
-
-    * リソース検索ダイアログが表示される
-
-* 整合性検証
-
-    * 整合性検証ダイアログを表示する
-
-* プロジェクト情報
-    
-    * プロジェクト情報ダイアログを表示する
-
-* ログ・コンソール
-
-    * MR\ :sup:`3` \の標準出力・標準エラー出力を表示するウィンドウを表示する．主にデバッグ用．
-
-* オプション
-
-    * オプションダイアログを表示する
-
+RDFソースコードビューア
+    RDFソースコードを表示するダイアログが表示される
+検索
+    リソース検索ダイアログが表示される
+整合性検証
+    整合性検証ダイアログを表示する
+プロジェクト情報
+    プロジェクト情報ダイアログを表示する
+ログ・コンソール
+    MR\ :sup:`3` \の標準出力・標準エラー出力を表示するウィンドウを表示する．主にデバッグ用．
+オプション
+    オプションダイアログを表示する
 
 ヘルプメニュー
 ~~~~~~~~~~~~~~~~~~
-
-* MR^3 について
-
-    * MR\ :sup:`3` \のバージョン，HPのURL等を表示する
-
-* MR^3 マニュアル 
-
-    * MR\ :sup:`3` \のマニュアルのページをウェブブラウザに表示する
-
+MR^3 について
+    MR\ :sup:`3` \のバージョン，HPのURL等を表示する
+MR^3 マニュアル 
+    MR\ :sup:`3` \のマニュアルのページをウェブブラウザに表示する
  
 ツールバー
 ------------- 
 
-================================================== ===================================================================
-        アイコン                                      機能                                                             
-================================================== ===================================================================
- .. figure:: figures/toolbar/new.png                MR\ :sup:`3` \のプロジェクトを新規に開く                             
- .. figure:: figures/toolbar/open.png               MR\ :sup:`3` \のプロジェクトファイルを開く．                          
- .. figure:: figures/toolbar/save.png               MR\ :sup:`3` \のプロジェクトファイルを保存する．                       
- .. figure:: figures/toolbar/saveas.png             MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．                  
- .. figure:: figures/toolbar/find.png               リソース検索ダイアログを表示する                                  
- .. figure:: figures/toolbar/rdf_editor.png         RDFエディタを前面に表示する                                   
- .. figure:: figures/toolbar/class_editor.png       クラスエディタを前面に表示する                                   
- .. figure:: figures/toolbar/property_editor.png    プロパティエディタを前面に表示する                                 
- .. figure:: figures/toolbar/attribute_dialog.png   属性ダイアログを前面に表示する                              
- .. figure:: figures/toolbar/namespace_table.png    名前空間テーブルを前面に表示する                                  
- .. figure:: figures/toolbar/cpr.png                クラス，プロパティ，RDFエディタを表示する
- .. figure:: figures/toolbar/cr.png                 クラス，RDFエディタを表示する
- .. figure:: figures/toolbar/pr.png                 プロパティ，RDFエディタを表示する
- .. figure:: figures/toolbar/code.png               RDFソースコードを表示する
- .. figure:: figures/toolbar/accept.png             整合性を検証する 
- .. figure:: figures/toolbar/information.png        プロジェクトの情報を表示する 
- .. figure:: figures/toolbar/log_console.png        ログコンソールを表示する
- .. figure:: figures/toolbar/cog.png                設定ダイアログを表示する
- .. figure:: figures/toolbar/help.png               MR\ :sup:`3` \について表示する
-================================================== ===================================================================
+.. csv-table::
+   :header: アイコン, 機能
+   :align: center
+   :widths: 3, 10 
+
+   .. figure:: figures/toolbar/new.png, MR\ :sup:`3` \のプロジェクトを新規に開く                             
+   .. figure:: figures/toolbar/open.png, MR\ :sup:`3` \のプロジェクトファイルを開く．                          
+   .. figure:: figures/toolbar/save.png, MR\ :sup:`3` \のプロジェクトファイルを保存する．                       
+   .. figure:: figures/toolbar/saveas.png, MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．                  
+   .. figure:: figures/toolbar/find.png, リソース検索ダイアログを表示する                                  
+   .. figure:: figures/toolbar/rdf_editor.png, RDFエディタを前面に表示する                                   
+   .. figure:: figures/toolbar/class_editor.png, クラスエディタを前面に表示する                                   
+   .. figure:: figures/toolbar/property_editor.png, プロパティエディタを前面に表示する                                 
+   .. figure:: figures/toolbar/attribute_dialog.png, 属性ダイアログを前面に表示する                              
+   .. figure:: figures/toolbar/namespace_table.png, 名前空間テーブルを前面に表示する                                  
+   .. figure:: figures/toolbar/cpr.png, クラス，プロパティ，RDFエディタを表示する
+   .. figure:: figures/toolbar/cr.png, クラス，RDFエディタを表示する
+   .. figure:: figures/toolbar/pr.png, プロパティ，RDFエディタを表示する
+   .. figure:: figures/toolbar/code.png, RDFソースコードを表示する
+   .. figure:: figures/toolbar/accept.png, 整合性を検証する 
+   .. figure:: figures/toolbar/information.png, プロジェクトの情報を表示する 
+   .. figure:: figures/toolbar/log_console.png, ログコンソールを表示する
+   .. figure:: figures/toolbar/cog.png, 設定ダイアログを表示する
+   .. figure:: figures/toolbar/help.png, MR\ :sup:`3` \について表示する
 
 ショートカットキー
 ----------------------- 
@@ -825,56 +765,41 @@ Windowsの場合には「Ctrl」を，macosの場合には「Command」をショ
 全体で使えるショートカットキー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ctrl + N | Command + N
-    MR\ :sup:`3` \のプロジェクトを新規に開く．現在の作成中のプロジェクトは，保存するか破棄するかを選択する．
-Ctrl + O | Command + O
-    MR\ :sup:`3` \のプロジェクトファイルを開く．
-Ctrl + S | Command + S
-    MR\ :sup:`3` \のプロジェクトファイルを保存する．
-Ctrl + Shift + S | Command + Shift + S
-    MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．
-Ctrl + Q | Command + Q
-    MR\ :sup:`3` \を終了する．
-Ctrl + Shift + A | Command + Shift + A
-    属性ダイアログを前面に表示する．
-Ctrl + Shift + N | Command + Shift + N
-    名前空間テーブルを前面に表示する．
-Ctrl + 1 | Command + 1
-    ウィンドウ再配置(クラスエディタ，プロパティエディタ，RDFエディタ）を実行
-Ctrl + 2 | Command + 2
-    ウィンドウ再配置(クラスエディタとRDFエディタ）を実行
-Ctrl + 3 | Command + 3
-    ウィンドウ再配置(プロパティエディタとRDFエディタ）を実行
-Ctrl + R | Command + R
-    RDFソースコードビューアを表示する．
-Ctrl + F | Command + F
-    リソース検索ダイアログを表示する．
-Ctrl + Shift + V | Command + Shift + V
-    整合性検証を実行する．
-Ctrl + Shift + M | Command + Shift + M
-    プロジェクト情報を表示する．
-Ctrl + Shift + L | Command + Shift + L
-    ログ・コンソールを表示する．
-Ctrl + Shift + O | Command + Shift + O
-    オプションダイアログを表示する．
-F1
-    MR\ :sup:`3` \についてを表示する．
+.. csv-table::
+   :header: ショートカットキー, 説明
+   :align: center
+   :widths: 5, 10 
+
+    Ctrl + N | Command + N, MR\ :sup:`3` \のプロジェクトを新規に開く．現在の作成中のプロジェクトは，保存するか破棄するかを選択する．
+    Ctrl + O | Command + O, MR\ :sup:`3` \のプロジェクトファイルを開く．
+    Ctrl + S | Command + S, MR\ :sup:`3` \のプロジェクトファイルを保存する．
+    Ctrl + Shift + S | Command + Shift + S, MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．
+    Ctrl + Q | Command + Q, MR\ :sup:`3` \を終了する．
+    Ctrl + Shift + A | Command + Shift + A, 属性ダイアログを前面に表示する．
+    Ctrl + Shift + N | Command + Shift + N, 名前空間テーブルを前面に表示する．
+    Ctrl + 1 | Command + 1, ウィンドウ再配置(クラスエディタ，プロパティエディタ，RDFエディタ）を実行
+    Ctrl + 2 | Command + 2, ウィンドウ再配置(クラスエディタとRDFエディタ）を実行
+    Ctrl + 3 | Command + 3, ウィンドウ再配置(プロパティエディタとRDFエディタ）を実行
+    Ctrl + R | Command + R, RDFソースコードビューアを表示する．
+    Ctrl + F | Command + F, リソース検索ダイアログを表示する．
+    Ctrl + Shift + V | Command + Shift + V, 整合性検証を実行する．
+    Ctrl + Shift + M | Command + Shift + M, プロジェクト情報を表示する．
+    Ctrl + Shift + L | Command + Shift + L, ログ・コンソールを表示する．
+    Ctrl + Shift + O | Command + Shift + O, オプションダイアログを表示する．
+    F1, MR\ :sup:`3` \についてを表示する．
 
 エディタ内で使えるショートカットキー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ctrl + I | Command + I
-    リソースを挿入する．
-Ctrl + L | Command + L
-     RDFエディタ内でリテラルを挿入する．
-Ctrl + A | Command + A
-    エディタ内のノードをすべて選択する．
-Delete
-    エディタ内の選択されたノードを削除する．
-Ctrl + C | Command + C
-    エディタ内の選択されたノードをコピーする．
-Ctrl + X | Command + X
-    エディタ内の選択されたノードをカットする．
-Ctrl + V | Command + V
-    コピーまたは，カットされたノードをエディタにペーストする．
+.. csv-table::
+   :header: ショートカットキー, 説明
+   :align: center
+   :widths: 5, 10 
 
+   Ctrl + I | Command + I, リソースを挿入する．
+   Ctrl + L | Command + L, RDFエディタ内でリテラルを挿入する．
+   Ctrl + A | Command + A, エディタ内のノードをすべて選択する．
+   Delete, エディタ内の選択されたノードを削除する．
+   Ctrl + C | Command + C, エディタ内の選択されたノードをコピーする．
+   Ctrl + X | Command + X, エディタ内の選択されたノードをカットする．
+   Ctrl + V | Command + V, コピーまたは，カットされたノードをエディタにペーストする．
