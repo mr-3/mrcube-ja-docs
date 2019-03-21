@@ -68,15 +68,15 @@ RDFエディタのツールバー
 
    .. figure:: figures/toolbar/resource.png, RDFリソースを挿入する      
    .. figure:: figures/toolbar/literal.png, RDFリテラルを挿入する                           
-   .. figure:: figures/toolbar/copy.png,               ノードをコピーする                                         
-   .. figure:: figures/toolbar/cut.png,               ノードをカットする                                         
-   .. figure:: figures/toolbar/paste.png,              ノードをペーストする                                        
-   .. figure:: figures/toolbar/delete.png,             ノードを削除する                                          
-   .. figure:: figures/toolbar/undo.png,               アンドゥ
-   .. figure:: figures/toolbar/redo.png,               リドゥ
+   .. figure:: figures/toolbar/copy.png, ノードをコピーする                                         
+   .. figure:: figures/toolbar/cut.png, ノードをカットする                                         
+   .. figure:: figures/toolbar/paste.png, ノードをペーストする                                        
+   .. figure:: figures/toolbar/delete.png, ノードを削除する                                          
+   .. figure:: figures/toolbar/undo.png, アンドゥ
+   .. figure:: figures/toolbar/redo.png, リドゥ
    .. figure:: figures/toolbar/export_graph_img.png,   RDFグラフを画像ファイルに保存する
-   .. figure:: figures/toolbar/l_to_r_layout.png,      RDFグラフの自動整列を実行する
-   .. figure:: figures/toolbar/open_resource.png,      選択したリソースを開く
+   .. figure:: figures/toolbar/l_to_r_layout.png,      RDFグラフの自動整列を実行する（左から右）
+   .. figure:: figures/toolbar/open_resource.png,      選択したRDFリソースを開く
 
 RDFエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -238,10 +238,10 @@ RDFエディタ内のRDFリテラルを選択すると，属性ダイアログ�
     .. figure:: figures/toolbar/delete.png,                  ノードを削除する                                          
     .. figure:: figures/toolbar/undo.png,                    アンドゥ
     .. figure:: figures/toolbar/redo.png,                    リドゥ
-    .. figure:: figures/toolbar/export_graph_img.png,        RDFグラフを画像ファイルに保存する
+    .. figure:: figures/toolbar/export_graph_img.png,        クラスグラフを画像ファイルに保存する
     .. figure:: figures/toolbar/l_to_r_layout.png,           RDFグラフの自動整列を実行（左から右）する
-    .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（右から左）する
-    .. figure:: figures/toolbar/open_resource.png,           選択したリソースを開く
+    .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（上から下）する
+    .. figure:: figures/toolbar/open_resource.png,           選択したRDFSクラスを開く
 
 クラスエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -345,10 +345,10 @@ RDFエディタ内のRDFリテラルを選択すると，属性ダイアログ�
    .. figure:: figures/toolbar/delete.png,                  ノードを削除する                                          
    .. figure:: figures/toolbar/undo.png,                    アンドゥ
    .. figure:: figures/toolbar/redo.png,                    リドゥ
-   .. figure:: figures/toolbar/export_graph_img.png,        RDFグラフを画像ファイルに保存する
+   .. figure:: figures/toolbar/export_graph_img.png,        プロパティグラフを画像ファイルに保存する
    .. figure:: figures/toolbar/l_to_r_layout.png,           RDFグラフの自動整列を実行（左から右）
-   .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（右から左）
-   .. figure:: figures/toolbar/open_resource.png,           選択したリソースを開く
+   .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（上から下）
+   .. figure:: figures/toolbar/open_resource.png,           選択したRDFSプロパティを開く
 
 プロパティエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -742,9 +742,9 @@ MR^3 マニュアル
    .. figure:: figures/toolbar/save.png, MR\ :sup:`3` \のプロジェクトファイルを保存する．                       
    .. figure:: figures/toolbar/saveas.png, MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．                  
    .. figure:: figures/toolbar/find.png, リソース検索ダイアログを表示する                                  
-   .. figure:: figures/toolbar/rdf_editor.png, RDFエディタを前面に表示する                                   
-   .. figure:: figures/toolbar/class_editor.png, クラスエディタを前面に表示する                                   
-   .. figure:: figures/toolbar/property_editor.png, プロパティエディタを前面に表示する                                 
+   .. figure:: figures/toolbar/rdf_editor.png, RDFエディタオーバービューを前面に表示する                                   
+   .. figure:: figures/toolbar/class_editor.png, クラスエディタオーバービューを前面に表示する                                   
+   .. figure:: figures/toolbar/property_editor.png, プロパティエディタオーバービューを前面に表示する                                 
    .. figure:: figures/toolbar/attribute_dialog.png, 属性ダイアログを前面に表示する                              
    .. figure:: figures/toolbar/namespace_table.png, 名前空間テーブルを前面に表示する                                  
    .. figure:: figures/toolbar/cpr.png, クラス，プロパティ，RDFエディタを表示する
