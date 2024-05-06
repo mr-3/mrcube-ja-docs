@@ -8,20 +8,19 @@
 動作環境
 ------------
    
-MR\ :sup:`3` \は，Java言語で実装されている．実行するには，JRE (Java Runtime Environment) 18または，それ以上が必要である．
-ver. 22.5.2 では，JRE18が組み込まれているため，別途JREをインストールする必要はない．
+MR\ :sup:`3` \は，Java言語で実装されている．実行するには，JRE (Java Runtime Environment) 17または，それ以上が必要である．
+ver. 24.5.1 では，JRE21が組み込まれているため，別途JREをインストールする必要はない．
 
 動作確認は，以下の環境で行っている．
 
-* MS Windows 11 + OpenJDK version "18.0.1.1"
-* macOS 14.4.1 + OpenJDK version "18.0.1.1"
+* MS Windows 11 + OpenJDK version "21.0.3"
 
 インストール方法
 -------------------
 
 Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-22.5.2.msi** をダウンロードしてファイルを開く．
+#. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-24.5.1.msi** をダウンロードしてファイルを開く．
 #. 「WindowsによってPCが保護されました」と表示されるため，「詳細情報」リンクをクリックする．
 #. 「実行」ボタンをクリックする．
 #. 「この不明な発行元からのアプリがデバイスに変更を加えることを許可しますか？」というダイアログが表示されるため，「はい」をクリックする．
@@ -29,20 +28,27 @@ Windows
 
 macOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. `Docker Desktop for Mac <https://www.docker.com/products/docker-desktop>`_ をインストール
+#. `XQuarts <https://www.xquartz.org/>`_ をインストールして実行し，「設定」メニューの「セキュリティ」タブから「ネットワーク・クライアントからの接続を許可」にチェックを入れる
+#. `mrcube-ja.sh <https://raw.githubusercontent.com/mr-3/docker-mrcube/main/mrcube-ja/mrcube-ja.sh>`_ をダウンロード
+#. ターミナル.appから./mrcube-ja.sh を実行する
+#. ホームディレクトリ直下の「mrcube」ディレクトリからDocker上の「/home/mrcube/mrcube-home」ディレクトリにアクセス可能
+
 #. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-22.5.2-x64.dmg** をダウンロードして展開し，「アプリケーション」フォルダに **mrcube-22.5.2.app** をコピーする．
 #. **mrcube-22.5.2.app** を実行する．
 #. 「"mrcube-22.5.2"はインターネットからダウンロードされたアプリケーションです。開いてもよろしいですか？」というダイアログが表示されるため、「開く」ボタンをクリックする．
+
+Linux
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+#. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-24.5.1-all.jar** をダウンロードする．
+#. **java -jar mrcube-24.5.1.jar** を実行する．
 
 アンインストール方法
 ------------------------
 
 Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-「設定」画面からアプリメニューを選択し，インストールされているアプリ一覧から **mrcube-22.5.2** を選択し，アンインストールする．
-
-macOS
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-アプリケーションフォルダから **mrcube-22.5.2.app** を削除する．
+「設定」画面からアプリメニューを選択し，インストールされているアプリ一覧から **mrcube-24.5.1** を選択し，アンインストールする．
 
 使用しているライブラリ
 ----------------------
