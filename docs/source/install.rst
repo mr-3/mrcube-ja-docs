@@ -34,10 +34,6 @@ macOS
 #. ターミナル.appから./mrcube-ja.sh を実行する
 #. ホームディレクトリ直下の「mrcube」ディレクトリからDocker上の「/home/mrcube/mrcube-home」ディレクトリにアクセス可能
 
-#. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-22.5.2-x64.dmg** をダウンロードして展開し，「アプリケーション」フォルダに **mrcube-22.5.2.app** をコピーする．
-#. **mrcube-22.5.2.app** を実行する．
-#. 「"mrcube-22.5.2"はインターネットからダウンロードされたアプリケーションです。開いてもよろしいですか？」というダイアログが表示されるため、「開く」ボタンをクリックする．
-
 Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-24.5.1-all.jar** をダウンロードする．
