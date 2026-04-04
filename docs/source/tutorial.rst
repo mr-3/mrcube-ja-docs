@@ -59,7 +59,7 @@ RDFコンテンツの作成 （トップダウン）
 
 「接頭辞」テキストフィールドと「名前空間」テキストフィールドにそれぞれ，登録したい接頭辞および名前空間を入力し，「追加」ボタンを押すと接頭辞と対応する名前空間が名前空間テーブルに登録される．名前空間テーブルに登録された接頭辞は，各要素（インスタンス，インスタンスプロパティ，RDFSクラス，RDFSプロパティ）作成する際に用いられる．
 
-.. |nstable| image:: figures/toolbar/namespace_table.png 
+.. |nstable| image:: figures/toolbar/namespace_table.svg 
 
 .. figure:: figures/top-down-step1.png
    :scale: 25 %
@@ -138,7 +138,7 @@ RDFSクラス **foaf:Person** とRDFSプロパティ **foaf:knows**, **schema:bi
 
 インスタンスプロパティを編集するためには，属性ダイアログを表示する．属性ダイアログを表示するためには，ツールバーの |attribute-dialog| アイコンをクリックするか，ポップアップメニューから「属性ダイアログを表示」メニューを選択する．RDFプロパティ **foaf:knows** に変更するためには，「接頭辞」コンボボックスから接頭辞 **foaf** を選択し，「プロパティID」リストから **knows** を選択する．「適用」ボタンをクリックすると変更が反映される．
 
-.. |attribute-dialog| image:: figures/toolbar/attribute_dialog.png 
+.. |attribute-dialog| image:: figures/toolbar/attribute_dialog.svg 
 
 .. figure:: figures/top-down-step6-2.png
    :scale: 50 %
@@ -155,7 +155,7 @@ RDFSクラス **foaf:Person** とRDFSプロパティ **foaf:knows**, **schema:bi
 
 作成したRDFコンテンツが，どのように出力されるかを確認するには，RDFソースコードビューアを表示する．RDFソースコードビューアは，ツールメニューのRDFソースコードビューアを選択するか，ツールバーの |rdf_source_code_viewer| を選択する．ラジオボタンから構文として，**Turtle**，**JSONLD**，**XML**，**N-Triples** の形式が選択できる．ボタンを選択すると，指定した構文でRDFソースコードが表示される．
 
-.. |rdf_source_code_viewer| image:: figures/toolbar/code.png 
+.. |rdf_source_code_viewer| image:: figures/toolbar/code.svg 
 
 .. figure:: figures/top-down-step7-2.png
    :scale: 50 %

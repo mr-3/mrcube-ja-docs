@@ -66,17 +66,17 @@ MR\ :sup:`3` \の画面構成
    :align: center
    :widths: 3, 10 
 
-   .. figure:: figures/toolbar/instance_node.png, インスタンスを挿入する      
-   .. figure:: figures/toolbar/literal_node.png, リテラルを挿入する                           
-   .. figure:: figures/toolbar/copy.png, ノードをコピーする                                         
-   .. figure:: figures/toolbar/cut.png, ノードをカットする                                         
-   .. figure:: figures/toolbar/paste.png, ノードをペーストする                                        
-   .. figure:: figures/toolbar/delete.png, ノードを削除する                                          
-   .. figure:: figures/toolbar/undo.png, アンドゥ
-   .. figure:: figures/toolbar/redo.png, リドゥ
-   .. figure:: figures/toolbar/export_graph_img.png,   インスタンスグラフを画像ファイルに保存する
-   .. figure:: figures/toolbar/l_to_r_layout.png,      インスタンスグラフの自動整列を実行する（左から右）
-   .. figure:: figures/toolbar/open_resource.png,      選択したインスタンスを開く
+   .. figure:: figures/toolbar/instance_node.svg, インスタンスを挿入する      
+   .. figure:: figures/toolbar/literal_node.svg, リテラルを挿入する                           
+   .. figure:: figures/toolbar/copy.svg, ノードをコピーする                                         
+   .. figure:: figures/toolbar/cut.svg, ノードをカットする                                         
+   .. figure:: figures/toolbar/paste.svg, ノードをペーストする                                        
+   .. figure:: figures/toolbar/delete.svg, ノードを削除する                                          
+   .. figure:: figures/toolbar/undo.svg, アンドゥ
+   .. figure:: figures/toolbar/redo.svg, リドゥ
+   .. figure:: figures/toolbar/save_image.svg,   インスタンスグラフを画像ファイルに保存する
+   .. figure:: figures/toolbar/left_to_right.svg,      インスタンスグラフの自動整列を実行する（左から右）
+   .. figure:: figures/toolbar/open_resource.svg,      選択したインスタンスを開く
 
 インスタンスエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -231,17 +231,17 @@ RDFリソースに対して，rdfs:label プロパティを用いてRDFリソー
    :align: center
    :widths: 3, 10 
 
-    .. figure:: figures/toolbar/class_node.png,                RDFSクラスを挿入する    
-    .. figure:: figures/toolbar/copy.png,                    ノードをコピーする                                         
-    .. figure:: figures/toolbar/cut.png,                     ノードをカットする                                         
-    .. figure:: figures/toolbar/paste.png,                   ノードをペーストする                                        
-    .. figure:: figures/toolbar/delete.png,                  ノードを削除する                                          
-    .. figure:: figures/toolbar/undo.png,                    アンドゥ
-    .. figure:: figures/toolbar/redo.png,                    リドゥ
-    .. figure:: figures/toolbar/export_graph_img.png,        クラスグラフを画像ファイルに保存する
-    .. figure:: figures/toolbar/l_to_r_layout.png,           RDFグラフの自動整列を実行（左から右）する
-    .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（上から下）する
-    .. figure:: figures/toolbar/open_resource.png,           選択したRDFSクラスを開く
+    .. figure:: figures/toolbar/class_node.svg,                RDFSクラスを挿入する    
+    .. figure:: figures/toolbar/copy.svg,                    ノードをコピーする                                         
+    .. figure:: figures/toolbar/cut.svg,                     ノードをカットする                                         
+    .. figure:: figures/toolbar/paste.svg,                   ノードをペーストする                                        
+    .. figure:: figures/toolbar/delete.svg,                  ノードを削除する                                          
+    .. figure:: figures/toolbar/undo.svg,                    アンドゥ
+    .. figure:: figures/toolbar/redo.svg,                    リドゥ
+    .. figure:: figures/toolbar/save_image.svg,        クラスグラフを画像ファイルに保存する
+    .. figure:: figures/toolbar/left_to_right.svg,           RDFグラフの自動整列を実行（左から右）する
+    .. figure:: figures/toolbar/up_to_down.svg,           RDFグラフの自動整列を実行（上から下）する
+    .. figure:: figures/toolbar/open_resource.svg,           選択したRDFSクラスを開く
 
 クラスエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -338,17 +338,17 @@ RDFリソースに対して，rdfs:label プロパティを用いてRDFリソー
    :align: center
    :widths: 3, 10 
      
-   .. figure:: figures/toolbar/property_node.png,                RDFSプロパティを挿入する    
-   .. figure:: figures/toolbar/copy.png,                    ノードをコピーする                                         
-   .. figure:: figures/toolbar/cut.png,                     ノードをカットする                                         
-   .. figure:: figures/toolbar/paste.png,                   ノードをペーストする                                        
-   .. figure:: figures/toolbar/delete.png,                  ノードを削除する                                          
-   .. figure:: figures/toolbar/undo.png,                    アンドゥ
-   .. figure:: figures/toolbar/redo.png,                    リドゥ
-   .. figure:: figures/toolbar/export_graph_img.png,        プロパティグラフを画像ファイルに保存する
-   .. figure:: figures/toolbar/l_to_r_layout.png,           RDFグラフの自動整列を実行（左から右）
-   .. figure:: figures/toolbar/u_to_d_layout.png,           RDFグラフの自動整列を実行（上から下）
-   .. figure:: figures/toolbar/open_resource.png,           選択したRDFSプロパティを開く
+   .. figure:: figures/toolbar/property_node.svg,                RDFSプロパティを挿入する    
+   .. figure:: figures/toolbar/copy.svg,                    ノードをコピーする                                         
+   .. figure:: figures/toolbar/cut.svg,                     ノードをカットする                                         
+   .. figure:: figures/toolbar/paste.svg,                   ノードをペーストする                                        
+   .. figure:: figures/toolbar/delete.svg,                  ノードを削除する                                          
+   .. figure:: figures/toolbar/undo.svg,                    アンドゥ
+   .. figure:: figures/toolbar/redo.svg,                    リドゥ
+   .. figure:: figures/toolbar/save_image.svg,        プロパティグラフを画像ファイルに保存する
+   .. figure:: figures/toolbar/left_to_right.svg,           RDFグラフの自動整列を実行（左から右）
+   .. figure:: figures/toolbar/up_to_down.svg,           RDFグラフの自動整列を実行（上から下）
+   .. figure:: figures/toolbar/open_resource.svg,           選択したRDFSプロパティを開く
 
 プロパティエディタのポップアップメニュー
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -473,7 +473,7 @@ RDFリソースに対して，rdfs:label プロパティを用いてRDFリソー
 
    インポートダイアログ
 
-.. |open| image:: figures/toolbar/open.png 
+.. |open| image:: figures/toolbar/open.svg 
 
 「ファイルのタイプ」として「すべてのファイル」を選択した場合には，ファイルの拡張子によりファイルの形式が自動判別される．拡張子とファイルの形式の対応関係を以下に示す． 
 
@@ -505,7 +505,7 @@ RDFリソースに対して，rdfs:label プロパティを用いてRDFリソー
 
    エクスポートダイアログ
 
-.. |saveas| image:: figures/toolbar/saveas.png 
+.. |saveas| image:: figures/toolbar/save_as.svg 
 
     
 .. index:: 設定ダイアログ
@@ -760,23 +760,18 @@ MR^3 マニュアル
    :align: center
    :widths: 3, 10 
 
-   .. figure:: figures/toolbar/new.png, MR\ :sup:`3` \のプロジェクトを新規に開く                             
-   .. figure:: figures/toolbar/open.png, MR\ :sup:`3` \のプロジェクトファイルを開く．                          
-   .. figure:: figures/toolbar/save.png, MR\ :sup:`3` \のプロジェクトファイルを保存する．                       
-   .. figure:: figures/toolbar/saveas.png, MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．                  
-   .. figure:: figures/toolbar/find.png, リソース検索ダイアログを表示する                                  
-   .. figure:: figures/toolbar/rdf_editor.png, RDFエディタオーバービューを前面に表示する                                   
-   .. figure:: figures/toolbar/class_editor.png, クラスエディタオーバービューを前面に表示する                                   
-   .. figure:: figures/toolbar/property_editor.png, プロパティエディタオーバービューを前面に表示する                                 
-   .. figure:: figures/toolbar/attribute_dialog.png, 属性ダイアログを前面に表示する                              
-   .. figure:: figures/toolbar/namespace_table.png, 名前空間テーブルを前面に表示する                                  
-   .. figure:: figures/toolbar/code.png, RDFソースコードビューアを表示する
-   .. figure:: figures/toolbar/history_management.png, 履歴管理ダイアログを表示する
-   .. figure:: figures/toolbar/accept.png, 整合性を検証する 
-   .. figure:: figures/toolbar/information.png, プロジェクトの情報を表示する 
-   .. figure:: figures/toolbar/log_console.png, ログコンソールを表示する
-   .. figure:: figures/toolbar/cog.png, 設定ダイアログを表示する
-   .. figure:: figures/toolbar/help.png, MR\ :sup:`3` \について表示する
+   .. figure:: figures/toolbar/new.svg, MR\ :sup:`3` \のプロジェクトを新規に開く                             
+   .. figure:: figures/toolbar/open.svg, MR\ :sup:`3` \のプロジェクトファイルを開く．                          
+   .. figure:: figures/toolbar/save.svg, MR\ :sup:`3` \のプロジェクトファイルを保存する．                       
+   .. figure:: figures/toolbar/save_as.svg, MR\ :sup:`3` \のプロジェクトファイルを別名で保存する．                  
+   .. figure:: figures/toolbar/attribute_dialog.svg, 属性ダイアログを前面に表示する                              
+   .. figure:: figures/toolbar/namespace_table.svg, 名前空間テーブルを前面に表示する  
+   .. figure:: figures/toolbar/search.svg, リソース検索ダイアログを表示する                                    
+   .. figure:: figures/toolbar/code.svg, RDFソースコードビューアを表示する
+   .. figure:: figures/toolbar/history.svg, 履歴管理ダイアログを表示する
+   .. figure:: figures/toolbar/verified.svg, 整合性を検証する 
+   .. figure:: figures/toolbar/info.svg, プロジェクトの情報を表示する 
+   .. figure:: figures/toolbar/settings.svg, 設定ダイアログを表示する
 
 ショートカットキー
 ----------------------- 
