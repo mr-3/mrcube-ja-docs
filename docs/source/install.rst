@@ -36,7 +36,7 @@ macOS (dmgファイルのダウンロード)
 macOS (Homebrew)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. `Homebrew <https://brew.sh/>`_ をインストールする．
-#. ターミナル.appから ``brew tap mr-3/tap``と ``brew install --cask mrcube`` を実行する．
+#. ターミナル.appから ``brew tap mr-3/tap`` と ``brew install --cask mrcube`` を実行する．
 #. Applicationsディレクトリの中の「MRCube.app」を実行する．
 #. 「“MRCube”はインターネットからダウンロードされたアプリケーションです。開いてもよろしいですか?」と表示されるため，「開く」ボタンをクリックする．
 
