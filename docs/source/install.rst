@@ -9,9 +9,9 @@
 ------------
    
 MR\ :sup:`3` \は，Java言語で実装されている．
-ver. 26.4.2 では，`Liberica Standard JDK 21 <https://bell-sw.com/pages/downloads/#jdk-21-lts>`_
+ver. 26.4.3 では，`Liberica Standard JDK 25 <https://bell-sw.com/pages/downloads/#jdk-25-lts>`_
 が組み込まれているため，別途JDKをインストールする必要はない．
-Linuxで実行する際には，Java Runtime Environment (JRE) 21以降のインストールが必要である．
+Linuxで実行する際には，Java Runtime Environment (JRE) 25以降のインストールが必要である．
 
 動作確認は，以下の環境で行っている．
 
@@ -29,7 +29,7 @@ Windows
 
 macOS (dmgファイルのダウンロード)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-#. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-26.4.2.dmg** をダウンロードしてファイルを開く．
+#. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-26.4.3.dmg** をダウンロードしてファイルを開く．
 #. 「MRCube.app」をApplicationsディレクトリにドラッグアンドドロップし，「MRCube.app」を実行する．
 #. 「“MRCube”はインターネットからダウンロードされたアプリケーションです。開いてもよろしいですか?」と表示されるため，「開く」ボタンをクリックする．
 
@@ -43,7 +43,7 @@ macOS (Homebrew)
 Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 #. `ダウンロードページ <https://github.com/mr-3/mrcube/releases>`_  から **mrcube-24.4.1-all.jar** をダウンロードする．
-#. **java -jar mrcube-26.4.2.jar** を実行する．
+#. **java -jar mrcube-26.4.3.jar** を実行する．
 
 Docker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -66,7 +66,7 @@ macOS
 
 Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-「mrcube-26.4.2-all.jar」を削除する．
+「mrcube-26.4.3-all.jar」を削除する．
 
 使用しているライブラリ
 ----------------------
